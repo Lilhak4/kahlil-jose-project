@@ -56,5 +56,5 @@
     - type: String
   - }
 
-TRELLO
+**TRELLO**
 - https://trello.com/b/kp4pBfpY/kahlil-jose-project
