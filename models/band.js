@@ -12,6 +12,9 @@ const bandSchema = new Schema({
   },
   members: {
     type: String
+  },
+  user: {
+    type: String
   }
 });
 
