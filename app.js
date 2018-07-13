@@ -47,6 +47,11 @@ app.use(session({
   }
 }));
 
+app.use((req, res, next) => {
+  app.locals.currentUser = req.session.currentUser;
+  next();
+});
+
 // -----Routes-----
 app.use('/', indexRouter);
 app.use('/auth', authRouter);
