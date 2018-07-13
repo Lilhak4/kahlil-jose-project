@@ -24,7 +24,7 @@ router.post('/signup', (req, res, next) => {
     return;
   }
   if (!req.body.username || !req.body.password) {
-    req.flash('message-name', 'The message content');
+    // req.flash('message-name', 'The message content');
     res.redirect('/auth/signup');
     return;
   }
@@ -66,7 +66,7 @@ router.get('/login', (req, res, next) => {
     return;
   }
   const data = {
-    messages: req.flash('login-error')
+    // messages: req.flash('login-error')
   };
   res.render('auth/login', data);
 });
@@ -77,19 +77,19 @@ router.post('/login', (req, res, next) => {
     return;
   }
   if (!req.body.username || !req.body.password) {
-    req.flash('login-error', 'please provide a username and password');
+    // req.flash('login-error', 'please provide a username and password');
     res.redirect('/auth/login');
     return;
   }
   User.findOne({ username: req.body.username })
     .then((user) => {
       if (!user) {
-        req.flash('login-error', 'username and or password are incorrect');
+        // req.flash('login-error', 'username and or password are incorrect');
         res.redirect('/auth/login');
         return;
       }
       if (!bcrypt.compareSync(req.body.password, user.password)) {
-        req.flash('login-error', 'username and or password are incorrect');
+        // req.flash('login-error', 'username and or password are incorrect');
         res.redirect('/auth/login');
         return;
       }
