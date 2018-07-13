@@ -16,7 +16,7 @@ const app = express();
 
 // create app connect to db
 mongoose.Promise = Promise;
-mongoose.connect('mongodb://localhost/auth-demo', {
+mongoose.connect('mongodb://localhost/brand-title', {
   keepAlive: true,
   reconnectTries: Number.MAX_VALUE
 });
