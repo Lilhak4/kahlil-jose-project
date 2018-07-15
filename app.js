@@ -5,8 +5,8 @@ const path = require('path');
 // const bodyparser = require('body-parser')
 const cookieParser = require('cookie-parser');
 const logger = require('morgan');
-const session = require('express-session');
 const mongoose = require('mongoose');
+const session = require('express-session');
 const MongoStore = require('connect-mongo')(session);
 
 const indexRouter = require('./routes/index');
@@ -24,6 +24,9 @@ mongoose.connect('mongodb://localhost/brand-title', {
 // view engine setup
 app.set('views', path.join(__dirname, 'views'));
 app.set('view engine', 'hbs');
+
+const dbName = 'brand-title';
+mongoose.connect(`mongodb://localhost/${dbName}`);
 
 // -----Middleware-----
 app.use(logger('dev'));

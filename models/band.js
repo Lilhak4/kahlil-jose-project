@@ -2,7 +2,7 @@ const mongoose = require('mongoose');
 const Schema = mongoose.Schema;
 
 const bandSchema = new Schema({
-  bandName: {
+  name: {
     type: String,
     required: true
   },
