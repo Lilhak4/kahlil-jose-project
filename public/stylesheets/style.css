@@ -1,8 +1,10 @@
+/* layout style */
+
 body {
 	background: url(https://www.rehearsalfactory.com/wp-content/uploads/2013/09/660-9-e1379513664784.jpg);
 	background-size: cover;
 	background-position: center;
-	font-family: Lato;
+	font-family: 'Amaranth', sans-serif;
 	color: white;
 }
 
@@ -12,14 +14,6 @@ html {
 
 input {
 	color: black;
-}
-
-#content {
-	text-align: center;
-	padding-top: 25%;
-	text-shadow: 4px 0px 3px rgba(0,0,0,0.4),
-				 0px 8px 13px rgba(0,0,0,0.1),
-				 0px 18px 23px rgba(0,0,0,0.1)
 }
 
 h1 {
@@ -32,6 +26,32 @@ hr {
 	border-top: 1px solid #f8f8f8;
 	border-bottom: 1px solid rgba(0,0,0,0.2)
 }
+
+/* id style */
+
+#btn-signup-login {
+	width: 125px;
+	height: 25px;
+	border-radius: 12px;
+	color:rgba(0,0,0,0.4); 
+}
+
+#content {
+	text-align: center;
+	padding-top: 25%;
+	text-shadow: 4px 0px 3px rgba(0,0,0,0.4),
+	0px 8px 13px rgba(0,0,0,0.1),
+	0px 18px 23px rgba(0,0,0,0.1)
+}
+
+#login-signup-container {
+	display: flex;
+	flex-flow: column;
+	text-align: center;
+	margin: 15% 35%;
+}
+
+/* class style */
 
 .fas fa-user-plus {
 	margin-right: 5px
