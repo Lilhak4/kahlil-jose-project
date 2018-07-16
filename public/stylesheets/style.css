@@ -5,7 +5,6 @@ body {
 	background-size: cover;
 	background-position: center;
 	font-family: 'Amaranth', sans-serif;
-	color: white;
 }
 
 html {
@@ -19,6 +18,7 @@ input {
 h1 {
 	font-weight: 700;
 	font-size: 5em;
+	color: white;
 }
 
 hr {
