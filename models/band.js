@@ -11,9 +11,9 @@ const bandSchema = new Schema({
     required: true
   },
   members: {
-    type: String
+    type: [String]
   },
-  user: {
+  owner: {
     type: String
   }
 });

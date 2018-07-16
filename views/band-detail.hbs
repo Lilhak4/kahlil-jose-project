@@ -1,3 +1,5 @@
-{{!-- {{#each}} --}}
-<h1>{{band}}</h1>
-{{!-- {{/each}} --}}
+{{#each band}}
+<h2>{{this.name}}</h2>
+<p>{{this.members}}</p>
+<p>{{this.instrument_needed}}</p>
+{{/each}}
