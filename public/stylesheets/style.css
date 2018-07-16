@@ -55,6 +55,10 @@ hr {
 	margin: 15% 35%;
 }
 
+#mySelect {
+	width: 140px;
+}
+
 /* class style */
 
 .fas fa-user-plus {
