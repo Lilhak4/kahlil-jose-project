@@ -17,6 +17,10 @@ input {
 	color: black;
 }
 
+select {
+	color: black;
+}
+
 h1 {
 	font-weight: 700;
 	font-size: 5em;
@@ -28,12 +32,6 @@ hr {
 	border-bottom: 1px solid rgba(0,0,0,0.2)
 }
 
-input {
-	color: white;
-}
-p {
-	color: white;
-}
 /* id style */
 
 #btn-signup-login {
@@ -66,6 +64,7 @@ p {
 	font-size: 1.25em;
 	border-radius: 3px;
 	margin-bottom: 16px;
+	background-color: rgb(255, 255, 255);
 }
 
 #band-card-container {
