@@ -85,3 +85,7 @@ hr {
 .field-submit {
 	margin-top: 8px;
 }
+
+.navbar-brand {
+	font-size: 2.15em;
+}
