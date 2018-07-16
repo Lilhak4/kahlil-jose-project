@@ -43,19 +43,22 @@ hr {
 
 #content {
 	text-align: center;
-	padding-top: 25%;
+	/* padding-top: 25%; */
+	margin: 7% 10% 5% 10%;
+	background-color: rgb(0, 0, 0, 0.5);
+	padding: 188px;
 	text-shadow: 4px 0px 3px rgba(0,0,0,0.4),
 	0px 8px 13px rgba(0,0,0,0.1),
-	0px 18px 23px rgba(0,0,0,0.1)
+	0px 18px 23px rgba(0,0,0,0.1);
 }
 
 #login-signup-container {
-	display: flex;
+	display: flex; 
 	flex-flow: column;
 	text-align: center;
-	margin: 7% 10%;
+	margin: 5.4% 25.4% 0% 25.4%;
 	background-color: rgb(0, 0, 0, 0.5);
-	padding: 188px;
+	padding: 199px;
 }
 
 #mySelect {
@@ -77,10 +80,6 @@ hr {
 
 .fas fa-user-plus {
 	margin-right: 5px
-}
-
-.btn-default {
-	margin-top: 5px;
 }
 
 .field-submit {
