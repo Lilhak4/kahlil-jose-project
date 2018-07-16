@@ -91,5 +91,9 @@ hr {
 }
 
 .navbar-brand {
-	font-size: 2.15em;
+	font-size: 2.25em;
+}
+
+nav .navbar-nav {
+	font-size: 1.25em;
 }
