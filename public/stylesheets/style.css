@@ -59,6 +59,7 @@ hr {
 	width: 140px;
 	height: 32px;
 	font-size: 1.25em;
+	border-radius: 3px;
 }
 
 /* class style */
