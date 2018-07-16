@@ -5,6 +5,7 @@ body {
 	background-size: cover;
 	background-position: center;
 	font-family: 'Amaranth', sans-serif;
+	color: rgb(239, 242, 244);
 }
 
 
@@ -19,14 +20,6 @@ input {
 h1 {
 	font-weight: 700;
 	font-size: 5em;
-	color: white;
-}
-
-h2 {
-	color: aliceblue;
-}
-h3 {
-	color: white;
 }
 
 hr {
