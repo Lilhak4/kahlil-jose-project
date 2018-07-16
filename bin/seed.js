@@ -9,7 +9,7 @@ mongoose.connect(`mongodb://localhost/${dbName}`);
 const bands = [
   {
     name: 'Manolo and the mofos',
-    instrument_needed: 'ngk',
+    instrument_needed: 'guitar',
     members: 'bgukfguk',
     user: 'kufbubu'
   },
