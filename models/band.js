@@ -10,7 +10,7 @@ const bandSchema = new Schema({
     type: [String],
     required: true
   },
-  members: {
+  member: {
     type: [String],
     required: true
   },
