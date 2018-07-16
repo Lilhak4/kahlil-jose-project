@@ -21,6 +21,9 @@ h1 {
 	color: white;
 }
 
+h2 {
+	color: aliceblue;
+}
 h3 {
 	color: white;
 }
@@ -31,6 +34,12 @@ hr {
 	border-bottom: 1px solid rgba(0,0,0,0.2)
 }
 
+input {
+	color: white;
+}
+p {
+	color: white;
+}
 /* id style */
 
 #btn-signup-login {
@@ -61,6 +70,12 @@ hr {
 	font-size: 1.25em;
 	border-radius: 3px;
 	margin-bottom: 16px;
+}
+
+#band-card-container {
+	display: flex;
+	justify-content: space-evenly;
+	margin: 20% ;
 }
 
 /* class style */

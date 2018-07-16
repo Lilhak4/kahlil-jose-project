@@ -1,5 +1,9 @@
-{{#each band}}
-<h2>{{this.name}}</h2>
-<p>{{this.members}}</p>
-<p>{{this.instrument_needed}}</p>
-{{/each}}
+<div id="band-card-container">
+    {{#each band}}
+        <div class="band-card">
+            <h2>{{this.name}}</h2>
+            <p>{{this.members}}</p>
+            <p>{{this.instrument_needed}}</p>
+        </div>
+    {{/each}}
+</div>
