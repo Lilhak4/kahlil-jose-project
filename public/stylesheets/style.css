@@ -56,3 +56,11 @@ hr {
 .fas fa-user-plus {
 	margin-right: 5px
 }
+
+.btn-default {
+	margin-top: 5px;
+}
+
+.field-submit {
+	margin-top: 8px;
+}
