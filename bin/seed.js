@@ -8,34 +8,44 @@ mongoose.connect(`mongodb://localhost/${dbName}`);
 
 const bands = [
   {
-    name: 'Manolo and the mofos',
-    instrument_needed: ['Singer ', 'Guitar'],
+    name: 'Mc Kahlil',
+    instrument_needed: ['Singer', 'Bass'],
     members: 'bgukfguk',
-    user: 'kufbubu'
+    owner: 'kufbubu',
+    genre: 'Hip-hop'
   },
 
   {
     name: 'Manolo and mamakanuleras',
-    instrument_needed: ['Guitar ', 'Singer ', 'Bass'],
+    instrument_needed: ['Guitar', 'Singer', 'Bass'],
     members: 'sgdndg',
-    user: 'hsfnbsgn'
+    owner: 'hsfnbsgn',
+    genre: 'Punk-rock'
   },
 
   {
-    name: 'Kahlil and the bros',
-    instrument_needed: ['Guitar ', 'Singer ', 'Drums'],
+    name: 'Coucou band',
+    instrument_needed: ['Guitar', 'Bass', 'Drums'],
     members: 'nsfnfsn',
-    user: 'mhfmdg'
+    owner: 'mhfmdg',
+    genre: 'Jazz'
   },
-
   {
     name: 'Jose in da hood',
-    instrument_needed: ['Bass ', 'Singer '],
+    instrument_needed: ['Guitar', 'Singer', 'Drums', 'Bass'],
     members: 'nfsng',
-    user: 'advad'
+    owner: 'advad',
+    genre: 'Metal'
   }
-];
+  // {
 
+  //   name: 'Waca-band',
+  //   instrument_needed: [' Bass', ' Singer', ' Drums'],
+  //   members: 'nfsng',
+  //   owner: 'advad',
+  //   genre: 'Tropical-pachangoso'
+  // }
+];
 Band.create(bands)
   .then(() => {
     console.log(`Created ${bands.length} bands`);

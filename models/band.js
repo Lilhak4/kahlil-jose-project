@@ -11,10 +11,17 @@ const bandSchema = new Schema({
     required: true
   },
   members: {
-    type: [String]
+    type: [String],
+    required: true
   },
   owner: {
-    type: String
+    type: String,
+    required: true
+
+  },
+  genre: {
+    type: String,
+    required: true
   }
 });
 
