@@ -9,28 +9,28 @@ mongoose.connect(`mongodb://localhost/${dbName}`);
 const bands = [
   {
     name: 'Manolo and the mofos',
-    instrument_needed: 'guitar',
+    instrument_needed: ['Singer', 'Guitar'],
     members: 'bgukfguk',
     user: 'kufbubu'
   },
 
   {
     name: 'Manolo and mamakanuleras',
-    instrument_needed: 'fhfdhfs',
+    instrument_needed: ['Guitar', 'Singer', 'Bass'],
     members: 'sgdndg',
     user: 'hsfnbsgn'
   },
 
   {
     name: 'Kahlil and the bros',
-    instrument_needed: 'nfsnsf',
+    instrument_needed: ['Guitar', 'Singer', 'Drums'],
     members: 'nsfnfsn',
     user: 'mhfmdg'
   },
 
   {
     name: 'Jose in da hood',
-    instrument_needed: 'adbf',
+    instrument_needed: ['Bass', 'Singer'],
     members: 'nfsng',
     user: 'advad'
   }

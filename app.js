@@ -11,6 +11,7 @@ const MongoStore = require('connect-mongo')(session);
 
 const indexRouter = require('./routes/index');
 const authRouter = require('./routes/auth');
+const findBandRouter = require('./routes/bands');
 
 const app = express();
 
@@ -60,6 +61,7 @@ app.use((req, res, next) => {
 // -----Routes-----
 app.use('/', indexRouter);
 app.use('/auth', authRouter);
+app.use('/band', findBandRouter);
 
 // -- 404 and error handler
 

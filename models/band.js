@@ -7,7 +7,7 @@ const bandSchema = new Schema({
     required: true
   },
   instrument_needed: {
-    type: String,
+    type: [String],
     required: true
   },
   members: {
