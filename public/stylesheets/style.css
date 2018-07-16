@@ -21,6 +21,10 @@ select {
 	color: black;
 }
 
+label {
+	font-size: 1.5em;
+}
+
 h1 {
 	font-weight: 700;
 	font-size: 5em;
