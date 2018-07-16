@@ -5,7 +5,6 @@ body {
 	background-size: cover;
 	background-position: center;
 	font-family: 'Amaranth', sans-serif;
-	color: white;
 }
 
 html {
@@ -19,6 +18,11 @@ input {
 h1 {
 	font-weight: 700;
 	font-size: 5em;
+	color: white;
+}
+
+h3 {
+	color: white;
 }
 
 hr {
@@ -51,8 +55,24 @@ hr {
 	margin: 15% 35%;
 }
 
+#mySelect {
+	width: 140px;
+	height: 32px;
+	font-size: 1.25em;
+	border-radius: 3px;
+	margin-bottom: 16px;
+}
+
 /* class style */
 
 .fas fa-user-plus {
 	margin-right: 5px
+}
+
+.btn-default {
+	margin-top: 5px;
+}
+
+.field-submit {
+	margin-top: 8px;
 }
