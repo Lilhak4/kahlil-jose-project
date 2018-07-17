@@ -7,13 +7,32 @@ body {
 	font-family: 'Amaranth', sans-serif;
 	color: rgb(239, 242, 244);
 }
+
 html {
 	height: 100%;
 }
 
+
+/* typography */
+
 h2 {
 	font-size: 1.6em;
 }
+
+p {
+	font-size: 1em;
+}
+
+hr {
+	/* width: 400px; */
+	width: 32vh;
+	border-top: 1px solid #f8f8f8;
+	border-bottom: 1px solid rgba(0,0,0,0.2)
+}
+
+
+/* forms */
+
 
 input {
 	color: black;
@@ -27,20 +46,55 @@ label {
 	font-size: 1.5em;
 }
 
-hr {
-	/* width: 400px; */
-	width: 32vh;
-	border-top: 1px solid #f8f8f8;
-	border-bottom: 1px solid rgba(0,0,0,0.2)
+.invalid-feedback {
+	display: block;
 }
 
-a {
-	color: white;
+/* layout */
+
+.page {
+
 }
 
-p {
-	font-size: 1em;
+.page.listing {
+
 }
+
+/* components */
+
+.btn-sign-login {
+	color:rgba(0,0,0,0.4); 
+}
+
+
+
+
+/* pages */
+
+.page.login {
+
+
+}
+safdg
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 /* id style */
 
@@ -167,4 +221,15 @@ nav .navbar-nav {
 .band-card{
 	color: white;
 	font-style: italic;
+}
+
+.btn-logout {
+	background: none;
+	color: #777;
+	border: none;
+	padding: 10px 15px;
+	display: block;
+	padding: 10px 15px;
+	width: 100%;
+	text-align: left;
 }
