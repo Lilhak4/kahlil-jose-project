@@ -15,9 +15,7 @@ const bandSchema = new Schema({
     required: true
   },
   owner: {
-    type: String,
-    required: true
-
+    type: String
   },
   genre: {
     type: String,
