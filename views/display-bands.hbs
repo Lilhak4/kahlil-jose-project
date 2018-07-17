@@ -1,7 +1,9 @@
-<div id="band-card-container">
+<div class="page band list">
     {{#each bands}}
         <div class="band-card">
-            <h2><a href="{{this._id}}">{{this.name}}</a></h2>
+           <ul>
+              <li><h2><a href="{{this._id}}">{{this.name}}</a></h2></li> 
+           </ul> 
         </div>
     {{/each}}
 </div>

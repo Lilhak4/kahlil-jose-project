@@ -1,7 +1,7 @@
 /* layout style */
 
 body {
-	background: url(https://www.rehearsalfactory.com/wp-content/uploads/2013/09/660-9-e1379513664784.jpg);
+	background: url(https://wallpaper-house.com/data/out/6/wallpaper2you_123446.jpg);
 	background-size: cover;
 	background-position: center;
 	font-family: 'Amaranth', sans-serif;
@@ -30,6 +30,10 @@ hr {
 	border-bottom: 1px solid rgba(0,0,0,0.2)
 }
 
+a {
+	color: white;
+}
+
 
 /* forms */
 
@@ -48,6 +52,10 @@ label {
 
 .invalid-feedback {
 	display: block;
+}
+
+ul {
+	list-style-position: disc;
 }
 
 /* layout */
@@ -106,29 +114,33 @@ nav .navbar-nav {
 	flex-direction: column;
 }
 
+.page.band.list {
+	display: flex;
+	flex-flow: column;
+}
+
+.page.band.detail {
+	display: flex;
+	flex-flow: column; /*we are gonna change to wrap when we upload the band-image*/
+}
 
 /*cards*/
+
 .band-card{
 	color: white;
 	font-style: italic;
 }
 
-
-
-
-
-
-
 /* id style */
 
-#btn-signup-login {
-	/* width: 125px;
+/* #btn-signup-login {
+	width: 125px;
 	height: 25px;
-	border-radius: 12px; */
+	border-radius: 12px;
 	color:rgba(0,0,0,0.4); 
-}
+} */
 
-.content {
+/* .content {
 	height: 75vh;
 	margin: auto 10%;
 	text-align: center;
@@ -136,7 +148,7 @@ nav .navbar-nav {
 	text-shadow: 4px 0px 3px rgba(0,0,0,0.4),
 	0px 8px 13px rgba(0,0,0,0.1),
 	0px 18px 23px rgba(0,0,0,0.1);
-}
+} */
 
 /* for laptop */
 
@@ -153,7 +165,7 @@ nav .navbar-nav {
 	0px 18px 23px rgba(0,0,0,0.1);
 } */
 
-.content-login-signup {
+/* .content-login-signup {
 	display: flex; 
 	flex-flow: column;
 	height: 75vh;
@@ -163,7 +175,7 @@ nav .navbar-nav {
 	text-shadow: 4px 0px 3px rgba(0,0,0,0.4),
 	0px 8px 13px rgba(0,0,0,0.1),
 	0px 18px 23px rgba(0,0,0,0.1);
-}
+} */
 
 /* for laptop */
 
@@ -188,7 +200,7 @@ nav .navbar-nav {
 	background-color: rgb(255, 255, 255);
 } */
 
-#band-card-container {
+/* #band-card-container {
 	display: flex;
 	flex-direction: column;
 	height: 75vh;
@@ -210,17 +222,17 @@ nav .navbar-nav {
 	text-shadow: 4px 0px 3px rgba(0,0,0,0.4),
 	0px 8px 13px rgba(0,0,0,0.1),
 	0px 18px 23px rgba(0,0,0,0.1);
-}
+} */
 
 /* class style */
 
-.fas fa-user-plus {
-	/* margin-right: 5px */
-}
+/* .fas fa-user-plus {
+	margin-right: 5px
+} */
 
-.field-submit {
-	/* margin-top: 8px; */
-}
+/* .field-submit {
+	margin-top: 8px;
+} */
 
 
 
