@@ -53,11 +53,13 @@ label {
 /* layout */
 
 .page {
-
-}
-
-.page.listing {
-
+	height: 75vh;
+	margin: auto 10%;
+	text-align: center;
+	background-color: rgb(0, 0, 0, 0.6);
+	text-shadow: 4px 0px 3px rgba(0,0,0,0.4),
+	0px 8px 13px rgba(0,0,0,0.1),
+	0px 18px 23px rgba(0,0,0,0.1);
 }
 
 /* components */
@@ -65,30 +67,51 @@ label {
 .btn-sign-login {
 	color:rgba(0,0,0,0.4); 
 }
+.btn-logout {
+	background: none;
+	color: #777;
+	border: none;
+	padding: 10px 15px;
+	display: block;
+	padding: 10px 15px;
+	width: 100%;
+	text-align: left;
+}
 
+.select.instruments{
+	width: 26vh;
+	height: 8vh;
+	font-size: 1.25em;
+	background-color: rgb(255, 255, 255);
+	margin-bottom: 50%;
+}
 
+.field-password {
+	margin-bottom: 6vh;
+}
+
+.navbar-brand {
+	font-size: 2.25em;
+}
+
+nav .navbar-nav {
+	font-size: 1.25em;
+}
 
 
 /* pages */
 
-.page.login {
-
-
+.page.login.signup {
+	display: flex;
+	flex-direction: column;
 }
-safdg
 
 
-
-
-
-
-
-
-
-
-
-
-
+/*cards*/
+.band-card{
+	color: white;
+	font-style: italic;
+}
 
 
 
@@ -105,7 +128,7 @@ safdg
 	color:rgba(0,0,0,0.4); 
 }
 
-#content {
+.content {
 	height: 75vh;
 	margin: auto 10%;
 	text-align: center;
@@ -130,7 +153,7 @@ safdg
 	0px 18px 23px rgba(0,0,0,0.1);
 } */
 
-#login-signup-container {
+.content-login-signup {
 	display: flex; 
 	flex-flow: column;
 	height: 75vh;
@@ -153,13 +176,6 @@ safdg
 	padding: 199px;
 } */
 
-#mySelect {
-	width: 26vh;
-    height: 8vh;
-    font-size: 1.25em;
-    background-color: rgb(255, 255, 255);
-    margin-bottom: 50%;
-}
 
 /* for laptop */
 
@@ -206,30 +222,8 @@ safdg
 	/* margin-top: 8px; */
 }
 
-.navbar-brand {
-	font-size: 2.25em;
-}
 
-nav .navbar-nav {
-	font-size: 1.25em;
-}
 
-.field-password {
-	margin-bottom: 6vh;
-}
 
-.band-card{
-	color: white;
-	font-style: italic;
-}
 
-.btn-logout {
-	background: none;
-	color: #777;
-	border: none;
-	padding: 10px 15px;
-	display: block;
-	padding: 10px 15px;
-	width: 100%;
-	text-align: left;
-}
+
