@@ -1,18 +1,28 @@
-<form action="/band/add" method="post">
-  <label for="">Bandname:</label>
-  <input type="text" name="name">
 
-  <label for="">Instruments needed:</label>
-  <input type="text" name="Instrument_needed">
-
-  <label for="">Members:</label>
-  <input type="text" name="members">
-
-  <label for="">Genre:</label>
-  <input type="number" name="rating">
-
-   <label for="">Owner:</label>
-  <input type="text" name="owner">{{currentUser.username}}
-
-  <button type="submit">ADD</button>
-</form>
+<div class="page band add">
+    <form action="/band/add" method="post">
+        <div class="field">
+            <label for="">Bandname:</label>
+            <input type="text" name="name">
+        </div> 
+        <div class="field">
+            <label for="">Instruments needed:</label>
+            <input type="text" name="Instrument_needed">
+        </div>
+        <div class="field">
+            <label for="">Members:</label>
+            <input type="text" name="members">
+        </div>
+        <div class="field">
+            <label for="">Genre:</label>
+            <input type="number" name="rating">
+        </div>
+        <div class="field">
+            <label for="">Owner:</label>
+            <input type="text" name="owner">{{currentUser.username}}
+        </div>
+        <div class="field">
+            <button type="submit" class="btn-default btn-lg"><i class="fas fa-play"></i>Create</button>
+        </div>    
+    </form>
+</div>

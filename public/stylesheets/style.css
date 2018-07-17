@@ -124,6 +124,10 @@ nav.navbar-nav {
 	flex-flow: column; /*we are gonna change to wrap when we upload the band-image*/
 }
 
+.page.band.add {
+	display: flex;
+	text-align: left;
+}
 /*cards*/
 
 .band-card{

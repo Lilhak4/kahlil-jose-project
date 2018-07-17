@@ -33,10 +33,11 @@ router.post('/signup', (req, res, next) => {
       if (user) {
         // message username is already taken
         return res.redirect('/auth/signup');
-      } else {
-        // message username or password incorrect
-        res.redirect('/auth/login');
       }
+      // } else {
+      //   // message username or password incorrect
+      //   res.redirect('/auth/login');
+      // }
 
       const salt = bcrypt.genSaltSync(saltRounds);
       const hashedPassword = bcrypt.hashSync(req.body.password, salt);
