@@ -135,6 +135,16 @@ nav.navbar-nav {
 	font-style: italic;
 }
 
+.field.check.box {
+	display: flex;
+	flex-flow: wrap;
+	justify-content: space-evenly;
+    margin-bottom: 1vh;
+}
+
+.check-box {
+
+}
 
 
 

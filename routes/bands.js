@@ -9,15 +9,32 @@ router.get('/add', (req, res, next) => {
 router.post('/add', (req, res, next) => {
   const data = {
     name: req.body.name,
-    instrument_needed: req.body.instrument_needed,
+    instrument_needed: [],
     members: req.body.members,
     genre: req.body.genre,
     owner: req.body.owner
   };
+
+  if (req.body.Guitar) {
+    data.instrument_needed.push(req.body.Guitar);
+  }
+
+  if (req.body.Singer) {
+    data.instrument_needed.push(req.body.Singer);
+  }
+
+  if (req.body.Drum) {
+    data.instrument_needed.push(req.body.Drum);
+  }
+
+  if (req.body.Bass) {
+    data.instrument_needed.push(req.body.Bass);
+  }
+
   const newBand = new Band(data);
   newBand.save()
     .then((bands) => {
-      res.redirect('/band'); //    ------>para que no se quede el ordenador aqui toda la vida
+      res.redirect('/'); //    ------>para que no se quede el ordenador aqui toda la vida
     })
     .catch((error) => {
       console.log(error);

@@ -5,9 +5,14 @@
             <label for="">Bandname:</label>
             <input type="text" name="name">
         </div> 
-        <div class="field">
-            <label for="">Instruments needed:</label>
-            <input type="text" name="Instrument_needed">
+        <div>
+             <label for="">Instruments needed:</label>
+        </div> 
+        <div class="field check box">
+            <div class="check-box"><input type="checkbox" class="check-box-instrument" name="Guitar" value="Guitar" > Guitar</div>
+            <div class="check-box"><input type="checkbox" class="check-box-instrument" name="Singer" value="Singer" >Singer</div>
+            <div class="check-box"><input type="checkbox" class="check-box-instrument" name="Drum" value="Drum" >Drum</div>
+            <div class="check-box"><input type="checkbox" class="check-box-instrument" name="Bass" value="Bass" >Bass</div>
         </div>
         <div class="field">
             <label for="">Members:</label>
@@ -15,12 +20,12 @@
         </div>
         <div class="field">
             <label for="">Genre:</label>
-            <input type="number" name="rating">
+            <input type="text" name="genre">
         </div>
-        <div class="field">
+        {{!-- <div class="field">
             <label for="">Owner:</label>
             <input type="text" name="owner">{{currentUser.username}}
-        </div>
+        </div> --}}
         <div class="field">
             <button type="submit" class="btn-default btn-lg"><i class="fas fa-play"></i>Create</button>
         </div>    
