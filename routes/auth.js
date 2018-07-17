@@ -45,10 +45,7 @@ router.post('/signup', (req, res, next) => {
       const newUser = new User({
         username: req.body.username,
         password: hashedPassword,
-        location: {
-          type: 'Point',
-          coordinates: [(req.body.latitude), (req.body.longitude)]
-        }
+        instrument: req.body.instrument
       });
 
       newUser.save()
