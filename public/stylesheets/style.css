@@ -1,7 +1,7 @@
 /* layout style */
 
 body {
-	background: url(https://wallpaper-house.com/data/out/6/wallpaper2you_123446.jpg);
+	background: url(../images/background-image-instruments.jpg);
 	background-size: cover;
 	background-position: center;
 	font-family: 'Amaranth', sans-serif;
@@ -64,7 +64,7 @@ ul {
 	height: 75vh;
 	margin: auto 10%;
 	text-align: center;
-	background-color: rgb(0, 0, 0, 0.6);
+	/* background-color: rgb(0, 0, 0, 0.6); */
 	text-shadow: 4px 0px 3px rgba(0,0,0,0.4),
 	0px 8px 13px rgba(0,0,0,0.1),
 	0px 18px 23px rgba(0,0,0,0.1);
@@ -102,7 +102,7 @@ ul {
 	font-size: 2.25em;
 }
 
-nav .navbar-nav {
+nav.navbar-nav {
 	font-size: 1.25em;
 }
 
@@ -131,7 +131,13 @@ nav .navbar-nav {
 	font-style: italic;
 }
 
-/* id style */
+
+
+
+
+
+
+/* rest */
 
 /* #btn-signup-login {
 	width: 125px;
