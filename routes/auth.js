@@ -10,7 +10,7 @@ const saltRounds = 10;
 /* GET users listing. */
 router.get('/signup', (req, res, next) => {
   if (req.session.currentUser) {
-    // message please providsew username and password
+    req.flash('message-name', 'Already logged in');
     res.redirect('/');
     return;
   }
@@ -75,19 +75,19 @@ router.post('/login', (req, res, next) => {
     return;
   }
   if (!req.body.username || !req.body.password) {
-    // req.flash('login-error', 'please provide a username and password');
+    req.flash('login-error', 'please provide a username and password');
     res.redirect('/auth/login');
     return;
   }
   User.findOne({ username: req.body.username })
     .then((user) => {
       if (!user) {
-        // req.flash('login-error', 'username and or password are incorrect');
+        req.flash('login-error', 'username and or password are incorrect');
         res.redirect('/auth/login');
         return;
       }
       if (!bcrypt.compareSync(req.body.password, user.password)) {
-        // req.flash('login-error', 'username and or password are incorrect');
+        req.flash('login-error', 'username and or password are incorrect');
         res.redirect('/auth/login');
         return;
       }

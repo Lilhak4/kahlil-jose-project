@@ -9,6 +9,7 @@ const logger = require('morgan');
 const mongoose = require('mongoose');
 const session = require('express-session');
 const MongoStore = require('connect-mongo')(session);
+const flash = require('connect-flash');
 
 const indexRouter = require('./routes/index');
 const authRouter = require('./routes/auth');
@@ -38,6 +39,7 @@ app.use(express.urlencoded({ extended: false }));
 app.use(cookieParser());
 // app.use(bodyParser());
 app.use(express.static(path.join(__dirname, 'public')));
+app.use(flash());
 
 // -----Use Session-----
 app.use(session({
