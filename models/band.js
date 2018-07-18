@@ -1,5 +1,6 @@
 const mongoose = require('mongoose');
 const Schema = mongoose.Schema;
+const ObjectId = Schema.Types.ObjectId;
 
 const bandSchema = new Schema({
   name: {
@@ -10,12 +11,13 @@ const bandSchema = new Schema({
     type: [String],
     required: true
   },
-  member: {
-    type: [String],
-    required: true
-  },
+  member: [{
+    type: ObjectId,
+    ref: 'User'
+  }],
   owner: {
-    type: String
+    type: ObjectId,
+    ref: 'User'
   },
   genre: {
     type: String,

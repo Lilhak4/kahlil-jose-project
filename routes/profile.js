@@ -4,7 +4,11 @@ const router = express.Router();
 // const User = require('../models/user');
 
 router.get('/', function (req, res, next) {
-  res.render('profile');
+  if (req.session.currentUser) {
+    res.render('profile');
+  } else {
+    res.redirect('/auth/signup');
+  }
 });
 
 // if (req.body.owner == req.body.username) { ***trying to include current band that the user is a owner***

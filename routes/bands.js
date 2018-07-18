@@ -3,7 +3,11 @@ const router = express.Router();
 const Band = require('../models/band');
 
 router.get('/add', (req, res, next) => {
-  res.render('band-add');
+  if (req.session.currentUser) {
+    res.render('band-add');
+  } else {
+    res.redirect('/auth/signup');
+  }
 });
 
 router.post('/add', (req, res, next) => {
@@ -55,6 +59,7 @@ router.get('/search', (req, res, next) => {
 router.get('/:id', (req, res, next) => {
   const bandId = req.params.id;
   Band.findById(bandId)
+    .populate('member')
     .then(data => {
       res.render('band-details', {band: data});
     })

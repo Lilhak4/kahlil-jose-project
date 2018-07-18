@@ -1,10 +1,11 @@
 /* layout style */
 
 body {
-	background: url(../images/background-image-instruments.jpg);
+	background: url(https://png.pngtree.com/element_our/md/20180327/md_974d58fe28a206b7f340acc8ec8b8793.jpg);
 	background-size: cover;
 	background-position: center;
-	font-family: 'Amaranth', sans-serif;
+	/* font-family: 'Amaranth', sans-serif; */
+	font-family: 'Quicksand', sans-serif;
 	color: rgb(239, 242, 244);
 }
 
@@ -67,7 +68,7 @@ ul {
 	height: 75vh;
 	margin: auto 10%;
 	text-align: center;
-	background-color: rgb(221, 221, 221, 0.05);
+	/* background-color: rgb(221, 221, 221, 0.05); */
 	text-shadow: 4px 0px 3px rgba(0,0,0,0.4),
 	0px 8px 13px rgba(0,0,0,0.1),
 	0px 18px 23px rgba(0,0,0,0.1);
@@ -94,7 +95,7 @@ ul {
 	height: 8vh;
 	font-size: 1.25em;
 	background-color: rgb(255, 255, 255);
-	margin-bottom: 55%;
+	margin-bottom: 25%;
 	border-radius: 6px;
 }
 
