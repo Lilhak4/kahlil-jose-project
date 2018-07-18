@@ -16,7 +16,7 @@ router.post('/add', (req, res, next) => {
     instrument_needed: [],
     members: req.body.members,
     genre: req.body.genre,
-    owner: req.body.owner
+    owner: req.session.currentUser._id
   };
 
   if (req.body.Guitar) {
@@ -60,8 +60,15 @@ router.get('/:id', (req, res, next) => {
   const bandId = req.params.id;
   Band.findById(bandId)
     .populate('member')
-    .then(data => {
-      res.render('band-details', {band: data});
+    .then(result => {
+      const data = {
+        band: result,
+        owner: false
+      };
+      if (result.owner._id === req.session.currentUser._id) {
+        data.owner = true;
+      }
+      res.render('band-details', data);
     })
     .catch(error => {
       console.log(error);
