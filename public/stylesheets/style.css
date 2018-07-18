@@ -110,6 +110,11 @@ nav.navbar-nav {
 	font-size: 1.25em;
 }
 
+.navbar-default .navbar-toggle {
+	border-color: #ddd;
+	color: #777;
+}
+
 
 /* pages */
 
