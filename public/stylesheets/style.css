@@ -113,8 +113,13 @@ nav.navbar-nav {
 .navbar-default .navbar-toggle {
 	border-color: #ddd;
 	color: #777;
+	padding: 6px 10px;
 }
 
+.container > .navbar-header, .container-fluid > .navbar-header, .container > .navbar-collapse, .container-fluid > .navbar-collapse {
+	margin-right: -1px;
+	margin-left: -15px;
+}
 
 /* pages */
 
