@@ -11,7 +11,13 @@
     </div>
     <div class="field-submit">
       <button  type="submit" class="btn-default btn-lg"><i class="fas fa-play"></i>Login</button>
-      
+      {{#if messages.length}}
+      <ul class="validation">
+      {{#each messages}}
+      <h2>{{this}}</h2>
+      {{/each}}
+      </ul>
+      {{/if}}
     </div>
   </form>
 </div>
