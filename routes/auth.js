@@ -24,20 +24,16 @@ router.post('/signup', (req, res, next) => {
     return;
   }
   if (!req.body.username || !req.body.password) {
-    // req.flash('message-name', 'The message content');
+    req.flash('message-name', 'You need to provide a username and password');
     res.redirect('/auth/signup');
     return;
   }
   User.findOne({username: req.body.username})
     .then((user) => {
       if (user) {
-        // message username is already taken
+        req.flash('message-name', 'Username is already taken');
         return res.redirect('/auth/signup');
       }
-      // } else {
-      //   // message username or password incorrect
-      //   res.redirect('/auth/login');
-      // }
 
       const salt = bcrypt.genSaltSync(saltRounds);
       const hashedPassword = bcrypt.hashSync(req.body.password, salt);
@@ -51,6 +47,7 @@ router.post('/signup', (req, res, next) => {
       newUser.save()
         .then(() => {
           req.session.currentUser = newUser;
+          req.flash('message-name', 'Congratulations new user!');
           res.redirect('/');
         })
         .catch(next);
@@ -60,6 +57,7 @@ router.post('/signup', (req, res, next) => {
 
 router.get('/login', (req, res, next) => {
   if (req.session.currentUser) {
+    req.flash('message-name', 'Already logged in');
     res.redirect('/');
     return;
   }
@@ -71,6 +69,7 @@ router.get('/login', (req, res, next) => {
 
 router.post('/login', (req, res, next) => {
   if (req.session.currentUser) {
+    req.flash('message-name', 'Already logged in');
     res.redirect('/');
     return;
   }
@@ -82,12 +81,12 @@ router.post('/login', (req, res, next) => {
   User.findOne({ username: req.body.username })
     .then((user) => {
       if (!user) {
-        req.flash('login-error', 'username and or password are incorrect');
+        req.flash('login-error', 'Username and or password are incorrect');
         res.redirect('/auth/login');
         return;
       }
       if (!bcrypt.compareSync(req.body.password, user.password)) {
-        req.flash('login-error', 'username and or password are incorrect');
+        req.flash('login-error', 'Username and or password are incorrect');
         res.redirect('/auth/login');
         return;
       }
