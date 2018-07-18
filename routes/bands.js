@@ -65,7 +65,7 @@ router.get('/:id', (req, res, next) => {
         band: result,
         owner: false
       };
-      if (result.owner._id === req.session.currentUser._id) {
+      if (result.owner._id.toString() === req.session.currentUser._id) {
         data.owner = true;
       }
       res.render('band-details', data);
