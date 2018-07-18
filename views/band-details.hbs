@@ -5,12 +5,15 @@
     <h3><u>Members:</u> {{band.member}}</h3>
     <h3><u>Genre:</u> {{band.genre}}</h3>
 </div>
-
-<div class="field">
-    <button type="submit" class="btn-default btn-lg" name="join-btn">Join</button>
-</div>  
 {{#if owner}}
 <div class="field">
-    <button type="submit" class="btn-default btn-lg" name="application-btn">Check your applications</button>
+    <a href="/band/apply/{{band._id}}">View Applications</a>
 </div>  
 {{/if}}
+{{#unless owner}}
+<div class="field">
+    <form method="POST" action="/band/apply/:id">
+        <button type="submit" class="btn-default btn-lg" name="join-btn">Join</button>
+    </form>
+</div>
+{{/unless}}  

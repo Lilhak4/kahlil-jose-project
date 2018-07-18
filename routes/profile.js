@@ -3,7 +3,7 @@ const router = express.Router();
 // const Band = require('../models/band');
 // const User = require('../models/user');
 
-router.get('/', function (req, res, next) {
+router.get('/', (req, res, next) => {
   if (req.session.currentUser) {
     res.render('profile');
   } else {
@@ -15,7 +15,7 @@ router.get('/', function (req, res, next) {
 
 // }
 
-router.get('/edit', function (req, res, next) {
+router.get('/edit', (req, res, next) => {
   res.render('profile-edit');
 });
 

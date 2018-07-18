@@ -75,4 +75,10 @@ router.get('/:id', (req, res, next) => {
     });
 });
 
+router.post('/apply/:id', function (req, res, next) {
+  // 3. update the model then
+  // 2. send flash message (and rexeive+render in the page you redirect to)
+  // 1. rediertc
+});
+
 module.exports = router;
