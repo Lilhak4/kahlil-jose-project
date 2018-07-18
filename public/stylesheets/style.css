@@ -76,6 +76,10 @@ ul {
 
 /* components */
 
+.field {
+	margin-bottom: 3vh;
+}
+
 .btn-sign-login {
 	color:rgba(0,0,0,0.4); 
 }
@@ -154,7 +158,7 @@ nav.navbar-nav {
 	display: flex;
 	flex-flow: wrap;
 	justify-content: space-evenly;
-    margin-bottom: 1vh;
+    /* margin-bottom: 1vh; */
 }
 
 /* .check-box {
