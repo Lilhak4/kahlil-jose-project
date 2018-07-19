@@ -11,6 +11,10 @@ router.get('/add', (req, res, next) => {
 });
 
 router.post('/add', (req, res, next) => {
+  if (!req.session.currentUser) {
+    res.redirect('/auth/signup');
+    return;
+  }
   const data = {
     name: req.body.name,
     instrument_needed: [],
@@ -55,29 +59,34 @@ router.get('/search', (req, res, next) => {
 });
 
 router.get('/:id', (req, res, next) => {
+  if (!req.session.currentUser) {
+    res.redirect('/auth/signup');
+    return;
+  }
   const bandId = req.params.id;
   Band.findById(bandId)
     .populate('member')
     .then(result => {
       const data = {
         band: result,
-        owner: false,
-        applied: req.flash('apply-message')
+        owner: result.owner._id.toString() === req.session.currentUser._id,
+        alreadyApplied: !!result.applicants.find((item) => item.toString() === req.session.currentUser._id),
+        applies: req.flash('apply-message')
       };
-      if (result.owner._id.toString() === req.session.currentUser._id) {
-        data.owner = true;
-      }
       res.render('band-details', data);
     })
-    .catch(error => {
-      console.log(error);
-    });
+    .catch(next);
 });
 
 router.post('/apply/:id', (req, res, next) => {
-  const bandId = req.param.id;
-  // const userId = req.session.currentUser._id;
-  Band.update(bandId, { $push: { applicants: req.session.currentUser._id } })
+  if (!req.session.currentUser) {
+    res.redirect('/auth/signup');
+    return;
+  }
+  const bandId = req.params.id;
+  const filter = {_id: bandId};
+  const update = { $push: { applicants: req.session.currentUser._id } };
+  Band.update(filter, update)
     .then(result => {
       // const userApplicant = req.session.currentUser;
       req.flash('apply-message', 'You already have applied!');

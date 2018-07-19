@@ -1,7 +1,7 @@
 
 <div class="success apply">
-      {{#if applied.length}}
-        {{#each applied}}
+      {{#if applies.length}}
+        {{#each applies}}
           <h3>{{this}}</h3>
         {{/each}}
       {{/if}}
@@ -18,9 +18,11 @@
 </div>  
 {{/if}}
 {{#unless owner}}
+{{#unless alreadyApplied}}
 <div class="field">
-    <form method="POST" action="/band/apply/:id">
+    <form method="POST" action="/band/apply/{{band._id}}">
         <button type="submit" class="btn-default btn-lg" name="join-btn">Join</button>
     </form>
 </div>
-{{/unless}}  
+{{/unless}}
+{{/unless}}    
