@@ -104,6 +104,10 @@ page.profile {
 	background-color: rgba()
 }
 
+.logo {
+	width: 50px;
+}
+
 /* components */
 
 .field.band.create {
@@ -129,7 +133,7 @@ page.profile {
 }
 
 .btn-default.btn-lg {
-	background-color: rgba(135, 154, 151);
+	background-color: red;
 }
 .btn-default.btn-apply {
 	background-color: rgba(135, 154, 151);
