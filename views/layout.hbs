@@ -19,21 +19,22 @@
       <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
         <i class="fas fa-bars"></i><span class="sr-only">Toggle navigation</span>
       </button>
-      <a class="navbar-brand" href="/">Band Maker</a>
+      {{!-- <img src="/public/images/Bandr-logo.png"></img> --}}
+      <a class="navbar-brand" href="/">Bandr</a>
     </div>
 
     <!-- Collect the nav links, forms, and other content for toggling -->
     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
       <ul class="nav navbar-nav">
-      	<li class="active"><a href="/"><i class="fas fa-home"> </i> Home </i></a></li>
-      	<li><a href="/profile"><i class ="fas fa-music"></i> Profile </a></li>
-				<li><a href="/band/add"><i class ="fas fa-plus"></i> Create band </a></li>
+      	<li class="active"><a href="/"><i class="fas fa-home glyph"> </i> Home </i></a></li>
+      	<li><a href="/profile"><i class ="fas fa-music glyph"></i> Profile </a></li>
+				<li><a href="/band/add"><i class ="fas fa-plus glyph"></i> Create band </a></li>
 			</ul>
       <ul class="nav navbar-nav navbar-right">
-        <li><a href="/auth/signup"><i class="fas fa-user-plus"></i> Sign Up </a></li>
-        <li><a href="/auth/login"><i class="fas fa-user"></i> Login </a></li>
+        <li><a href="/auth/signup"><i class="fas fa-user-plus glyph"></i> Sign Up </a></li>
+        <li><a href="/auth/login"><i class="fas fa-user glyph"></i> Login </a></li>
         <li><form method="post" action="/auth/logout">
-              <button class="btn-logout"><i class="fas fa-sign-out-alt"></i> Logout </button>
+              <button class="btn-logout"><i class="fas fa-sign-out-alt glyph"></i> Logout </button>
             </form>
         </li>
       </ul>

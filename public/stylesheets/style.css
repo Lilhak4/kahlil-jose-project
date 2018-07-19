@@ -80,10 +80,22 @@ ul {
 	margin: auto 10%;
 	text-align: center;
 	/* background-color: rgb(221, 221, 221, 0.05); */
-	text-shadow: 4px 0px 3px rgba(0,0,0,0.4),
+	text-shadow: 4px 0px 3px rgba(0,0,0,0.8),
 	0px 8px 13px rgba(0,0,0,0.1),
 	0px 18px 23px rgba(0,0,0,0.1);
 }
+
+.page.home {
+	height: 63vh;
+  margin-top: 10vh;
+}
+
+.msg.error.login {
+	background-color: rgba(228, 69, 58, 0.692)
+}
+
+.
+
 
 /* components */
 
@@ -106,7 +118,7 @@ ul {
 }
 
 .select.instruments{
-	width: 26vh;
+	width: 28vh;
 	height: 8vh;
 	font-size: 1.25em;
 	background-color: rgb(255, 255, 255);
@@ -120,6 +132,7 @@ ul {
 
 .navbar-brand {
 	font-size: 2.25em;
+	margin-left: 2.5vh;
 }
 
 nav.navbar-nav {
@@ -127,7 +140,6 @@ nav.navbar-nav {
 }
 
 .navbar-default .navbar-toggle {
-	border-color: #ddd;
 	color: #777;
 	padding: 6px 10px;
 }
@@ -137,11 +149,26 @@ nav.navbar-nav {
 	margin-left: -15px;
 }
 
+.navbar-nav {
+	margin-left: 1vh;
+}
+
+.glyph  {
+	margin-right: 1vh;
+}
+
 /* pages */
 
-.page.login.signup {
+.page.signup {
 	display: flex;
 	flex-direction: column;
+}
+
+.page.login {
+	display: flex;
+	flex-direction: column;
+	height: 63vh;
+  margin-top: 10vh;
 }
 
 .page.band.list {
@@ -154,15 +181,31 @@ nav.navbar-nav {
 	flex-flow: column; /*we are gonna change to wrap when we upload the band-image*/
 }
 
+.page.band.detail h3 {
+	display: block
+}
+
 .page.band.add {
 	display: flex;
 	text-align: left;
 }
 /*cards*/
 
-.band-card{
+.band-card {
+	margin-left: 12vh;
+	margin-top: 10vh;
+	text-align: center;
+}
+
+.band-card ul {
 	color: white;
 	font-style: italic;
+	list-style: none;
+	align-items: center;
+}
+
+.card-body {
+	margin-bottom: 4vh;
 }
 
 .field.check.box {
@@ -171,6 +214,12 @@ nav.navbar-nav {
 	justify-content: space-evenly;
     /* margin-bottom: 1vh; */
 }
+
+.btn.btn-primary {
+	background-color: red;
+}
+
+
 
 /* .check-box {
 

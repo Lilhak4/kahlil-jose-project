@@ -1,9 +1,22 @@
-<div class="page band list">
+{{!-- <div class="page band list">
     {{#each bands}}
         <div class="band-card">
            <ul>
               <li><h2><a href="{{this._id}}">{{this.name}}</a></h2></li> 
            </ul> 
         </div>
+    {{/each}}
+</div> --}}
+
+<div class="band-card" style="width: 18rem;">
+    {{#each bands}}
+  {{!-- <img class="card-img-top" src="..." alt="Card image cap"> --}}
+  <div class="card-body">
+    <h4 class="card-title"><a href="{{this._id}}">{{this.name}}</a></h5>
+    <p class="card-text"></p>
+    {{#if ../currentUser}}
+    <a href="{{this._id}}" class="btn btn-primary">Band Details</a>
+    {{/if}}
+  </div>
     {{/each}}
 </div>

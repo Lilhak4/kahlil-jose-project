@@ -11,7 +11,7 @@ const bands = [
     name: 'Mc Kahlil',
     instrument_needed: ['Singer', 'Bass'],
     members: 'bgukfguk',
-    owner: 'kufbubu',
+    owner: 'Kahlil',
     genre: 'Hip-hop'
   },
 
@@ -19,7 +19,7 @@ const bands = [
     name: 'Manolo and mamakanuleras',
     instrument_needed: ['Guitar', 'Singer', 'Bass'],
     members: 'sgdndg',
-    owner: 'hsfnbsgn',
+    owner: 'Manolo',
     genre: 'Punk-rock'
   },
 
@@ -27,14 +27,14 @@ const bands = [
     name: 'Coucou band',
     instrument_needed: ['Guitar', 'Bass', 'Drums'],
     members: 'nsfnfsn',
-    owner: 'mhfmdg',
+    owner: 'Julien',
     genre: 'Jazz'
   },
   {
     name: 'Jose in da hood',
     instrument_needed: ['Guitar', 'Singer', 'Drums', 'Bass'],
     members: 'nfsng',
-    owner: 'advad',
+    owner: 'Jose',
     genre: 'Metal'
   }
   // {
