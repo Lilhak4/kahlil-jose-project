@@ -181,16 +181,31 @@ nav.navbar-nav {
 	flex-flow: column; /*we are gonna change to wrap when we upload the band-image*/
 }
 
+.page.band.detail h3 {
+	display: block
+}
+
 .page.band.add {
 	display: flex;
 	text-align: left;
 }
 /*cards*/
 
-.band-card ul{
+.band-card {
+	margin-left: 12vh;
+	margin-top: 10vh;
+	text-align: center;
+}
+
+.band-card ul {
 	color: white;
 	font-style: italic;
 	list-style: none;
+	align-items: center;
+}
+
+.card-body {
+	margin-bottom: 4vh;
 }
 
 .field.check.box {
@@ -199,6 +214,12 @@ nav.navbar-nav {
 	justify-content: space-evenly;
     /* margin-bottom: 1vh; */
 }
+
+.btn.btn-primary {
+	background-color: red;
+}
+
+
 
 /* .check-box {
 
