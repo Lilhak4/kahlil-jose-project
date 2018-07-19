@@ -104,13 +104,14 @@ page.profile {
 	background-color: rgba()
 }
 
-.
-
-
 /* components */
 
-.field {
+.field.band.create {
 	margin-bottom: 3vh;
+}
+
+.field.band.create button {
+	margin-left: 14vh;
 }
 
 .btn-sign-login {
@@ -133,10 +134,10 @@ page.profile {
 .btn-default.btn-apply {
 	background-color: rgba(135, 154, 151);
 	padding: 10px 16px;
-    font-size: 18px;
-    line-height: 1.3333333;
-		border-radius: 6px;
-		color: white;
+	font-size: 18px;
+	line-height: 1.3333333;
+	border-radius: 6px;
+	color: white;
 }
 
 .select.instruments{
@@ -216,6 +217,7 @@ nav.navbar-nav {
 .page.band.add {
 	display: flex;
 	text-align: left;
+	flex-direction: column;
 }
 /*cards*/
 

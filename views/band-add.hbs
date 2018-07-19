@@ -1,32 +1,32 @@
 
 <div class="page band add">
     <form action="/band/add" method="post">
-        <div class="field">
-            <label for="">Bandname:</label>
+        <div class="field band create">
+            <label for="">Band:</label>
             <input type="text" name="name">
         </div> 
-        <div class="field">
+        <div class="field band create">
              <label for="">Instruments needed:</label>
         </div> 
-        <div class="field check box">
+        <div class="field band create check box">
             <div class="check-box"><input type="checkbox" class="check-box-instrument" name="Guitar" value="Guitar" > Guitar</div>
             <div class="check-box"><input type="checkbox" class="check-box-instrument" name="Singer" value="Singer" >Singer</div>
             <div class="check-box"><input type="checkbox" class="check-box-instrument" name="Drums" value="Drum" >Drum</div>
             <div class="check-box"><input type="checkbox" class="check-box-instrument" name="Bass" value="Bass" >Bass</div>
         </div>
-        {{!-- <div class="field">
+        {{!-- <div class="field band create">
             <label for="">Members:</label>
             <input type="text" name="members">
         </div> --}}
-        <div class="field">
+        <div class="field band create">
             <label for="">Genre:</label>
             <input type="text" name="genre">
         </div>
-        {{!-- <div class="field">
+        {{!-- <div class="field band create">
             <label for="">Owner:</label>
             <input type="text" name="owner">{{currentUser.username}}
         </div> --}}
-        <div class="field">
+        <div class="field band create">
             <button type="submit" class="btn-default btn-lg"><i class="fas fa-play"></i>Create</button>
         </div>    
     </form>
