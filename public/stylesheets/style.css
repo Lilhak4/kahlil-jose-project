@@ -187,9 +187,10 @@ nav.navbar-nav {
 }
 /*cards*/
 
-.band-card{
+.band-card ul{
 	color: white;
 	font-style: italic;
+	list-style: none;
 }
 
 .field.check.box {
