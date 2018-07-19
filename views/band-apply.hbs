@@ -8,6 +8,7 @@
     <div class="applicants buttons">
         <form method="POST" action="/apply/{{../band._id}}/accept">
             <input type="hidden" name="applyId" value="{{this._id}}">
+            <input type="hidden" name="applyInstrument" value="{{this.instrument}}">
             <button class="check" type="submit" class="">accept</button>
         </form>
         <form method="POST" action="/apply/{{band._id}}/reject">
