@@ -33,7 +33,7 @@
       {{/if}}
     </div>
     <div class="msg error login">
-      {{#if loginError}}
+      {{#if loginError.length}}
         {{#each loginError}}
           <h3>{{this}}</h3>
         {{/each}}
