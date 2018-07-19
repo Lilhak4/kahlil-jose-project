@@ -7,17 +7,10 @@
       {{/if}}
     </div>
 <div class="page band detail">
-<<<<<<< HEAD
-    <h3><u>Name:</u> {{band.name}}</h3>
-    <h3><u>Instruments needed:</u> {{band.instrument_needed}}</h3>
-    <h3><u>Members:</u> {{#each band.member}}{{this.username}}{{/each}}</h3>
-    <h3><u>Genre:</u> {{band.genre}}</h3>
-=======
     <h3>Name:</h3> <p>{{band.name}}</p>
     <h3>Instruments needed:</h3><p>{{band.instrument_needed}}</p>
-    <h3>Members:</h3> <p>{{band.member}}</p>
+    <h3>Members:</h3> <p>{{#each band.member}}{{this.username}}{{/each}}</p>
     <h3>Genre:</h3> <p>{{band.genre}}</p>
->>>>>>> 78f1b52f5ce733ce91850211f05993480d824c63
 </div>
 {{#if owner}}
 <div class="field">
@@ -28,11 +21,7 @@
 {{#unless alreadyApplied}}
 <div class="field">
     <form class="apply-form" method="POST" action="/band/apply/{{band._id}}">
-<<<<<<< HEAD
-        <button type="submit" class="btn-default btn-lg" name="join-btn">Join</button>
-=======
         <button type="submit" class="btn-default btn-apply" name="join-btn">Join</button>
->>>>>>> 78f1b52f5ce733ce91850211f05993480d824c63
     </form>
 </div>
 {{/unless}}
