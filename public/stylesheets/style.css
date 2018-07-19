@@ -73,9 +73,6 @@ ul {
 	list-style-position: disc;
 }
 
-.apply-form {
-
-}
 
 /* layout */
 
@@ -96,6 +93,11 @@ ul {
 
 .msg.error.login {
 	background-color: rgba(228, 69, 58, 0.692)
+}
+
+page.profile {
+	text-align: center;
+	background-color: rgba()
 }
 
 .
@@ -122,7 +124,7 @@ ul {
 }
 
 .btn-default.btn-lg {
-	background-color: rgba(198, 230, 185);
+	background-color: rgba(135, 154, 151);
 }
 
 .select.instruments{
