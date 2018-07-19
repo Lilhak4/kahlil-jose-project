@@ -80,9 +80,16 @@ ul {
 	margin: auto 10%;
 	text-align: center;
 	/* background-color: rgb(221, 221, 221, 0.05); */
-	text-shadow: 4px 0px 3px rgba(0,0,0,0.4),
+	text-shadow: 4px 0px 3px rgba(0,0,0,0.8),
 	0px 8px 13px rgba(0,0,0,0.1),
 	0px 18px 23px rgba(0,0,0,0.1);
+	height: 63vh;
+  margin-top: 10vh;
+}
+
+.home-page {	
+	height: 63vh;
+  margin-top: 7vh;
 }
 
 /* components */
@@ -106,7 +113,7 @@ ul {
 }
 
 .select.instruments{
-	width: 26vh;
+	width: 28vh;
 	height: 8vh;
 	font-size: 1.25em;
 	background-color: rgb(255, 255, 255);
