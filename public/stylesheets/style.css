@@ -120,6 +120,7 @@ ul {
 
 .navbar-brand {
 	font-size: 2.25em;
+	margin-left: 1.5vh;
 }
 
 nav.navbar-nav {
@@ -127,7 +128,6 @@ nav.navbar-nav {
 }
 
 .navbar-default .navbar-toggle {
-	border-color: #ddd;
 	color: #777;
 	padding: 6px 10px;
 }
@@ -135,6 +135,14 @@ nav.navbar-nav {
 .container > .navbar-header, .container-fluid > .navbar-header, .container > .navbar-collapse, .container-fluid > .navbar-collapse {
 	margin-right: -1px;
 	margin-left: -15px;
+}
+
+.navbar-nav {
+	margin-left: 1vh;
+}
+
+.glyph  {
+	margin-right: 1vh;
 }
 
 /* pages */
