@@ -1,7 +1,7 @@
 const express = require('express');
 const router = express.Router();
 const Band = require('../models/band');
-const User = require('../models/user');
+// const User = require('../models/user');
 
 router.get('/:id', (req, res, next) => {
   const bandId = req.params.id;
