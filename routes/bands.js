@@ -51,9 +51,7 @@ router.get('/search', (req, res, next) => {
     .then(data => {
       res.render('display-bands', {bands: data});
     })
-    .catch(err => {
-      console.log(err);
-    });
+    .catch(next);
 });
 
 router.get('/:id', (req, res, next) => {
@@ -63,7 +61,8 @@ router.get('/:id', (req, res, next) => {
     .then(result => {
       const data = {
         band: result,
-        owner: false
+        owner: false,
+        applied: req.flash('apply-message')
       };
       if (result.owner._id.toString() === req.session.currentUser._id) {
         data.owner = true;
@@ -75,10 +74,16 @@ router.get('/:id', (req, res, next) => {
     });
 });
 
-router.post('/apply/:id', function (req, res, next) {
-  // 3. update the model then
-  // 2. send flash message (and rexeive+render in the page you redirect to)
-  // 1. rediertc
+router.post('/apply/:id', (req, res, next) => {
+  const bandId = req.param.id;
+  // const userId = req.session.currentUser._id;
+  Band.update(bandId, { $push: { applicants: req.session.currentUser._id } })
+    .then(result => {
+      // const userApplicant = req.session.currentUser;
+      req.flash('apply-message', 'You already have applied!');
+      res.redirect('/band/' + bandId);
+    })
+    .catch(next);
 });
 
 module.exports = router;

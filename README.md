@@ -39,22 +39,36 @@
     - type: String,
     - required: true
   - }
+  - instrument: {
+    - type: String,
+    - required: true
+  - }
 
 - Band
-- bandName: {
-    - type: String,
-    - required: true
-  - },
-  - instrument_needed: {
-    - type: String,
-    - required: true
-  - },
-  - members: {
-    - type: String
-  - },
-  - user: {
-    - type: String
-  - }
+- name: {
+   - type: String,
+   - required: true
+ - },
+ - instrument_needed: {
+  - type: [String],
+  - required: true
+ - },
+ - member: [{
+   - type: ObjectId,
+   - ref: 'User'
+ - }],
+ - owner: {
+   - type: ObjectId,
+   - ref: 'User'
+ - },
+ - genre: {
+  - type: String,
+  - required: true
+ - },
+ - applicants: [{
+   - type: ObjectId,
+   - ref: 'User'
+ - }]
 
 **TRELLO**
 - https://trello.com/b/kp4pBfpY/kahlil-jose-project

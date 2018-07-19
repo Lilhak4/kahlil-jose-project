@@ -1,4 +1,11 @@
 
+<div class="success apply">
+      {{#if applied.length}}
+        {{#each applied}}
+          <h3>{{this}}</h3>
+        {{/each}}
+      {{/if}}
+    </div>
 <div class="page band detail">
     <h3><u>Name:</u> {{band.name}}</h3>
     <h3><u>Instruments needed:</u> {{band.instrument_needed}}</h3>

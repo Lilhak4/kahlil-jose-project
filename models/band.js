@@ -22,7 +22,11 @@ const bandSchema = new Schema({
   genre: {
     type: String,
     required: true
-  }
+  },
+  applicants: [{
+    type: ObjectId,
+    ref: 'User'
+  }]
 });
 
 const Band = mongoose.model('Band', bandSchema);

@@ -10,13 +10,11 @@ const saltRounds = 10;
 /* GET users listing. */
 router.get('/signup', (req, res, next) => {
   if (req.session.currentUser) {
-    // req.flash('message-name', 'Already logged in');
     res.redirect('/');
     return;
   }
   const data = {
-    loginError: req.flash('login-error'),
-    messages: req.flash('message-name')
+    signupError: req.flash('signup-error')
   };
 
   res.render('auth/signup', data);
@@ -28,14 +26,14 @@ router.post('/signup', (req, res, next) => {
     return;
   }
   if (!req.body.username || !req.body.password) {
-    req.flash('login-error', 'You need to provide a username and password');
+    req.flash('signup-error', 'You need to provide a username and password');
     res.redirect('/auth/signup');
     return;
   }
   User.findOne({username: req.body.username})
     .then((user) => {
       if (user) {
-        req.flash('login-error', 'Username is already taken');
+        req.flash('signup-error', 'Username is already taken');
         return res.redirect('/auth/signup');
       }
 
@@ -51,7 +49,6 @@ router.post('/signup', (req, res, next) => {
       newUser.save()
         .then(() => {
           req.session.currentUser = newUser;
-          req.flash('message-name', 'Done!');
           res.redirect('/');
         })
         .catch(next);
@@ -61,25 +58,22 @@ router.post('/signup', (req, res, next) => {
 
 router.get('/login', (req, res, next) => {
   if (req.session.currentUser) {
-    // req.flash('message-name', 'Already logged in');
     res.redirect('/');
     return;
   }
   const data = {
-    loginError: req.flash('login-error'),
-    messages: req.flash('message-name')
+    loginError: req.flash('login-error')
   };
   res.render('auth/login', data);
 });
 
 router.post('/login', (req, res, next) => {
   if (req.session.currentUser) {
-    req.flash('message-name', 'Already logged in');
     res.redirect('/');
     return;
   }
   if (!req.body.username || !req.body.password) {
-    req.flash('message-name', 'Please provide a username and password');
+    req.flash('login-error', 'Please provide a username and password');
     res.redirect('/auth/login');
     return;
   }
@@ -95,7 +89,6 @@ router.post('/login', (req, res, next) => {
         res.redirect('/auth/login');
         return;
       }
-
       req.session.currentUser = user;
       res.redirect('/');
     })
