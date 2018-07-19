@@ -15,6 +15,7 @@ const indexRouter = require('./routes/index');
 const authRouter = require('./routes/auth');
 const findBandRouter = require('./routes/bands');
 const profileRouter = require('./routes/profile');
+const applyRouter = require('./routes/apply');
 
 const app = express();
 
@@ -67,6 +68,7 @@ app.use('/', indexRouter);
 app.use('/auth', authRouter);
 app.use('/band', findBandRouter);
 app.use('/profile', profileRouter);
+app.use('/apply', applyRouter);
 
 // -- 404 and error handler
 

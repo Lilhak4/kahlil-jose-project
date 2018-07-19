@@ -1,2 +1,4 @@
-<h1>{applicant.username}</h1>
-<h1>{applicant.instrument}</h1>
+{{#each applicants}}
+<h4>{{this.username}}</h4>
+<h4>{{this.instrument}}</h4>
+{{/each}}

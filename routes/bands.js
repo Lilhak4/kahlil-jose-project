@@ -44,9 +44,7 @@ router.post('/add', (req, res, next) => {
     .then((bands) => {
       res.redirect('/'); //    ------>para que no se quede el ordenador aqui toda la vida
     })
-    .catch((error) => {
-      console.log(error);
-    });
+    .catch(next);
 });
 
 router.get('/search', (req, res, next) => {
