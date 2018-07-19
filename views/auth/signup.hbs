@@ -12,7 +12,7 @@
     </div>
 
     <div class="field">
-      <label>Instrument</label>
+      <label>Choose your instrument</label>
     </div>
     <div class="field">
       	<select name="instrument" class="select instruments">
@@ -25,6 +25,19 @@
     <div class="field-submit">
       <button type="submit" class="btn-default btn-lg"><i class="fas fa-play"></i>Sign up</button>
     </div>
-    
+    <div class="msg success login">
+      {{#if messages.length}}
+        {{#each messages}}
+          <h3>{{this}}</h3>
+        {{/each}}
+      {{/if}}
+    </div>
+    <div class="msg error login">
+      {{#if loginError}}
+        {{#each loginError}}
+          <h3>{{this}}</h3>
+        {{/each}}
+      {{/if}}
+    </div>
   </form>
 </div>

@@ -16,8 +16,17 @@ html {
 
 /* typography */
 
+h1 {
+	margin-bottom: 3vh;
+}
+
 h2 {
 	font-size: 1.6em;
+	margin-bottom: 3vh;
+}
+
+h3 {
+    font-size: 1.5em;
 }
 
 p {
@@ -34,6 +43,8 @@ hr {
 a {
 	color: white;
 }
+
+
 
 
 
@@ -99,7 +110,7 @@ ul {
 	height: 8vh;
 	font-size: 1.25em;
 	background-color: rgb(255, 255, 255);
-	margin-bottom: 25%;
+	margin-bottom: 5vh;
 	border-radius: 6px;
 }
 

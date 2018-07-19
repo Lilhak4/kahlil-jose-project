@@ -10,12 +10,16 @@ const saltRounds = 10;
 /* GET users listing. */
 router.get('/signup', (req, res, next) => {
   if (req.session.currentUser) {
-    req.flash('message-name', 'Already logged in');
+    // req.flash('message-name', 'Already logged in');
     res.redirect('/');
     return;
   }
+  const data = {
+    loginError: req.flash('login-error'),
+    messages: req.flash('message-name')
+  };
 
-  res.render('auth/signup');
+  res.render('auth/signup', data);
 });
 
 router.post('/signup', (req, res, next) => {
@@ -24,14 +28,14 @@ router.post('/signup', (req, res, next) => {
     return;
   }
   if (!req.body.username || !req.body.password) {
-    req.flash('message-name', 'You need to provide a username and password');
+    req.flash('login-error', 'You need to provide a username and password');
     res.redirect('/auth/signup');
     return;
   }
   User.findOne({username: req.body.username})
     .then((user) => {
       if (user) {
-        req.flash('message-name', 'Username is already taken');
+        req.flash('login-error', 'Username is already taken');
         return res.redirect('/auth/signup');
       }
 
@@ -47,7 +51,7 @@ router.post('/signup', (req, res, next) => {
       newUser.save()
         .then(() => {
           req.session.currentUser = newUser;
-          req.flash('message-name', 'Congratulations new user!');
+          req.flash('message-name', 'Done!');
           res.redirect('/');
         })
         .catch(next);
@@ -57,12 +61,13 @@ router.post('/signup', (req, res, next) => {
 
 router.get('/login', (req, res, next) => {
   if (req.session.currentUser) {
-    req.flash('message-name', 'Already logged in');
+    // req.flash('message-name', 'Already logged in');
     res.redirect('/');
     return;
   }
   const data = {
-    // messages: req.flash('login-error')
+    loginError: req.flash('login-error'),
+    messages: req.flash('message-name')
   };
   res.render('auth/login', data);
 });
@@ -74,19 +79,19 @@ router.post('/login', (req, res, next) => {
     return;
   }
   if (!req.body.username || !req.body.password) {
-    req.flash('message-name', 'please provide a username and password');
+    req.flash('message-name', 'Please provide a username and password');
     res.redirect('/auth/login');
     return;
   }
   User.findOne({ username: req.body.username })
     .then((user) => {
       if (!user) {
-        req.flash('message-name', 'Username and or password are incorrect');
+        req.flash('login-error', 'Username or password are incorrect');
         res.redirect('/auth/login');
         return;
       }
       if (!bcrypt.compareSync(req.body.password, user.password)) {
-        req.flash('message-name', 'Username and or password are incorrect');
+        req.flash('login-error', 'Username or password are incorrect');
         res.redirect('/auth/login');
         return;
       }

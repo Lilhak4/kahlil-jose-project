@@ -11,12 +11,19 @@
     </div>
     <div class="field-submit">
       <button  type="submit" class="btn-default btn-lg"><i class="fas fa-play"></i>Login</button>
+    </div>
+    <div class="msg success login">
       {{#if messages.length}}
-      <ul class="validation">
-      {{#each messages}}
-      <h2>{{this}}</h2>
-      {{/each}}
-      </ul>
+        {{#each messages}}
+          <h3>{{this}}</h3>
+        {{/each}}
+      {{/if}}
+    </div>
+    <div class="msg error login">
+      {{#if loginError.lenght}}
+        {{#each loginError}}
+          <h3>{{this}}</h3>
+        {{/each}}
       {{/if}}
     </div>
   </form>
