@@ -20,7 +20,7 @@
 {{#unless owner}}
 {{#unless alreadyApplied}}
 <div class="field">
-    <form method="POST" action="/band/apply/{{band._id}}">
+    <form class="apply-form" method="POST" action="/band/apply/{{band._id}}">
         <button type="submit" class="btn-default btn-lg" name="join-btn">Join</button>
     </form>
 </div>

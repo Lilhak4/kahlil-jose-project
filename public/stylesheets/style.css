@@ -73,6 +73,10 @@ ul {
 	list-style-position: disc;
 }
 
+.apply-form {
+
+}
+
 /* layout */
 
 .page {
@@ -115,6 +119,10 @@ ul {
 	padding: 10px 15px;
 	width: 100%;
 	text-align: left;
+}
+
+.btn-default.btn-lg {
+	background-color: rgba(198, 230, 185);
 }
 
 .select.instruments{
