@@ -182,7 +182,12 @@ nav.navbar-nav {
 }
 
 .page.band.detail h3 {
-	display: block
+	display: block;
+	text-decoration: underline;
+}
+
+.page.band.detail p {
+	font-size: 1.4em;
 }
 
 .page.band.add {
@@ -192,7 +197,6 @@ nav.navbar-nav {
 /*cards*/
 
 .band-card {
-	margin-left: 12vh;
 	margin-top: 10vh;
 	text-align: center;
 }
@@ -208,6 +212,8 @@ nav.navbar-nav {
 	background-color: rgba(200,200,200,0.6);
 	margin-bottom: 4vh;
 	padding: 20px 20px 30px 20px;
+	width: 56vh;
+	height: 22vh;
 }
 
 .field.check.box {
