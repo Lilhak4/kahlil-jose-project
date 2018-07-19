@@ -27,8 +27,8 @@ router.post('/add', (req, res, next) => {
     data.instrument_needed.push(req.body.Singer);
   }
 
-  if (req.body.Drum) {
-    data.instrument_needed.push(req.body.Drum);
+  if (req.body.Drums) {
+    data.instrument_needed.push(req.body.Drums);
   }
 
   if (req.body.Bass) {
