@@ -87,13 +87,15 @@ ul {
 
 .page.home {
 	height: 63vh;
-  margin-top: 7vh;
+  margin-top: 10vh;
 }
 
-.home-page {	
-	height: 63vh;
-  margin-top: 7vh;
+.msg.error.login {
+	background-color: rgba(228, 69, 58, 0.692)
 }
+
+.
+
 
 /* components */
 
@@ -166,7 +168,7 @@ nav.navbar-nav {
 	display: flex;
 	flex-direction: column;
 	height: 63vh;
-  margin-top: 7vh;
+  margin-top: 10vh;
 }
 
 .page.band.list {
