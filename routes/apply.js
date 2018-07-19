@@ -19,11 +19,14 @@ router.get('/:id', (req, res, next) => {
 router.post('/:id/accept', (req, res, next) => {
   const bandId = req.params.id;
   const applicant = req.body.applyId;
-  const update = { $unset: { applicants: applicant } };
-  const update2 = { $push: { members: applicant } };
-  Band.findByIdAndUpdate(bandId, update, update2)
+  const update = { $push: { member: applicant } };
+  const update2 = { $pull: { applicants: applicant } };
+  Band.findByIdAndUpdate(bandId, update)
     .then(result => {
     //   req.flash('apply-message', 'Applicant added');
+      return Band.findByIdAndUpdate(bandId, update2);
+    })
+    .then(result2 => {
       res.redirect('/band/' + bandId);
     })
     .catch(next);
