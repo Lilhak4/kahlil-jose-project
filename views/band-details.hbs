@@ -14,14 +14,14 @@
 </div>
 {{#if owner}}
 <div class="field">
-    <a href="/apply/{{band._id}}">View Applications</a>
+    <a class="view apply owner" href="/apply/{{band._id}}">View Applications</a>
 </div>  
 {{/if}}
 {{#unless owner}}
 {{#unless alreadyApplied}}
 <div class="field">
     <form class="apply-form" method="POST" action="/band/apply/{{band._id}}">
-        <button type="submit" class="btn-default btn-lg" name="join-btn">Join</button>
+        <button type="submit" class="btn-default btn-apply" name="join-btn">Join</button>
     </form>
 </div>
 {{/unless}}

@@ -73,6 +73,10 @@ ul {
 	list-style-position: disc;
 }
 
+.apply-form {
+	margin-left: 22vh;
+}
+
 
 /* layout */
 
@@ -125,6 +129,14 @@ page.profile {
 
 .btn-default.btn-lg {
 	background-color: rgba(135, 154, 151);
+}
+.btn-default.btn-apply {
+	background-color: rgba(135, 154, 151);
+	padding: 10px 16px;
+    font-size: 18px;
+    line-height: 1.3333333;
+		border-radius: 6px;
+		color: white;
 }
 
 .select.instruments{
@@ -194,6 +206,7 @@ nav.navbar-nav {
 .page.band.detail h3 {
 	display: block;
 	text-decoration: underline;
+	font-size: 1.7em
 }
 
 .page.band.detail p {
@@ -237,12 +250,42 @@ nav.navbar-nav {
 	background-color: red;
 }
 
+.view.apply.owner {
+	margin-left: 16vh;
+  font-size: 1.25em;
+}
+
 
 
 /* .check-box {
 
 } */
 
+.view.apply.owner {
+  animation: pulse 5s infinite;
+}
+
+@keyframes pulse {
+  0% {
+    background-color: #001F3F;
+  }
+  100% {
+    background-color: #FF4136;
+  }
+}
+
+.btn-default.btn-apply {
+  animation: pulse 5s infinite;
+}
+
+@keyframes pulse {
+  0% {
+    background-color: #001F3F;
+  }
+  100% {
+    background-color: #FF4136;
+  }
+}
 
 
 
