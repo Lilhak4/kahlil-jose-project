@@ -205,7 +205,9 @@ nav.navbar-nav {
 }
 
 .card-body {
+	background-color: rgba(200,200,200,0.6);
 	margin-bottom: 4vh;
+	padding: 20px 0px;
 }
 
 .field.check.box {
