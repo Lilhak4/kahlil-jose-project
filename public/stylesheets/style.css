@@ -83,8 +83,11 @@ ul {
 	text-shadow: 4px 0px 3px rgba(0,0,0,0.8),
 	0px 8px 13px rgba(0,0,0,0.1),
 	0px 18px 23px rgba(0,0,0,0.1);
+}
+
+.page.home {
 	height: 63vh;
-  margin-top: 10vh;
+  margin-top: 7vh;
 }
 
 .home-page {	
@@ -154,9 +157,16 @@ nav.navbar-nav {
 
 /* pages */
 
-.page.login.signup {
+.page.signup {
 	display: flex;
 	flex-direction: column;
+}
+
+.page.login {
+	display: flex;
+	flex-direction: column;
+	height: 63vh;
+  margin-top: 7vh;
 }
 
 .page.band.list {
