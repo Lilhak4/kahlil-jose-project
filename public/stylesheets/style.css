@@ -86,10 +86,6 @@ label {
     margin-bottom: 4vh;
 }
 
-.invalid-feedback {
-	display: block;
-}
-
 ul {
 	list-style-position: disc;
 }
@@ -113,7 +109,7 @@ ul {
 
 .page.home {
 	height: 63vh;
- 	margin-top: 8vh;
+	margin-top: 8vh;
 }
 
 .btn {
@@ -127,7 +123,7 @@ ul {
 }
 
 .btn-default {
-    line-height: 1.3333333;
+	line-height: 1.3333333;
     font-size: 1.25em;
     background-color: #303030;
     margin-bottom: 5vh;
@@ -138,12 +134,24 @@ ul {
 	text-align: center;
 }
 
+.invalid-feedback {
+	display: block;
+}
+
 .msg.error.login {
 	margin-bottom: 5vh;
-    border-radius: 6vh;
-    color: rgb(204, 209, 209);
-	border-color: darkgrey;
-	width: 10vh;
+}
+
+
+.msg.error.login p,
+.msg.error.login h3 {
+    color: rgb(204, 100, 100);
+}
+
+.applicants.btn {
+	height: 48px;
+	width: 48px;
+	margin-bottom: 0;
 }
 
 page.profile {
@@ -214,11 +222,10 @@ page.profile {
 
 .select.instruments{
 	width: 28vh;
-    height: 8vh;
+    padding: 10px;
     font-size: 1.25em;
     background-color: #303030;
     margin-bottom: 5vh;
-    border-radius: 6vh;
     color: rgb(204, 209, 209);
 	border-color: darkgrey;
 	border-style: double;
@@ -332,8 +339,15 @@ page.profile {
 .applicants.container {
 	display: flex;
     justify-content: space-between;
-    flex-wrap: wrap;
+	flex-wrap: wrap;
+	margin: 0 20px;
 }
+
+
+.applicants.container .back {
+	font-size: 20px;
+}
+
 
 /* .btn.btn-primary {
 	font-size: 0.8vh;
@@ -347,11 +361,11 @@ page.profile {
 }
 
 .applicants.info {
-	width: 50%;
+	width: 70%;
 }
 
 .applicants.buttons {
-	width: 50%;
+	width: 30%;
 	text-align: right; 
 }
 

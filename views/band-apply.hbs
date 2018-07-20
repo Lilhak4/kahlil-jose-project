@@ -10,17 +10,14 @@
         <form method="POST" action="/apply/{{../band._id}}/accept">
             <input type="hidden" name="applyId" value="{{this._id}}">
             <input type="hidden" name="applyInstrument" value="{{this.instrument}}">
-            <button class="check" type="submit" class=""><img src="" alt="" class="apply accpet"></button>
+            <button class="check" type="submit" class=""><img src="../images/check-btn.png" alt="" class="applicants btn accpet"></button>
         </form>
         <form method="POST" action="/apply/{{../band._id}}/reject">
             <input type="hidden" name="applyId" value="{{this._id}}">
-            <button class="cross" type="submit"><img src="../public/images/cross-btn.png" alt="" class="apply reject"></button>
+            <button class="cross" type="submit"><img src="../images/cross-btn.png" alt="" class="applicants btn reject"></button>
         </form> 
-        <img src="../public/images/cross-btn.png" alt="">
     </div>   
        <hr class="applicants separe line">
 {{/each}}
-</div>
-<div>
-    <a href="/band/{{band._id}}">go back</a> 
+    <a class="back" href="/band/{{band._id}}">go back</a> 
 </div>
