@@ -112,7 +112,7 @@ ul {
 
 .page.home {
 	height: 63vh;
-  margin-top: 10vh;
+ 	margin-top: 8vh;
 }
 
 .btn {
@@ -196,7 +196,7 @@ page.profile {
 }
 
 .field-password {
-	margin-bottom: 3vh;
+	margin-bottom: 5vh;
 }
 
 
@@ -333,7 +333,7 @@ page.profile {
     margin-bottom: 5vh;
     border-radius: 6vh;
     color: rgb(204, 209, 209);
-	border-color: rgb(135, 135, 135);
+	border-color: rgb(104, 104, 104);
     border-style: solid;
 }
 
