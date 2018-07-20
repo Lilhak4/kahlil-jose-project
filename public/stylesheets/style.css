@@ -19,17 +19,18 @@ html {
 /* typography */
 
 h {
-	margin-bottom: 3vh;
-    color: rgb(178, 183, 183);
+	margin-bottom: 4vh;
+	letter-spacing: 0.1vh;
 }
 
+
 h1 {
-    letter-spacing: 0.8vh;
+	color: rgb(211, 211, 211);
+	margin-bottom: 4vh;
 }
 
 h2 {
 	font-size: 1.6em;
-	margin-bottom: 3vh;
 }
 
 h3 {
@@ -37,14 +38,15 @@ h3 {
 }
 
 p {
-	font-size: 1em;
+	font-size: 1.2em;
     color: #777777;
-    margin-bottom: 4vh;
+    margin-bottom: 3vh;
 }
 
 hr {
 	/* width: 400px; */
 	width: 32vh;
+	margin-bottom: 8vh;
 	border-top: 1px solid #f8f8f8;
 	border-bottom: 1px solid rgba(0,0,0,0.2)
 }
@@ -54,16 +56,23 @@ a {
 }
 
 
+/* forms */7
 
-
-
-
-
-/* forms */
-
+button {
+	padding-top: 10px;
+    padding-bottom: 10px;
+    line-height: 20px;
+    background-color: #303030;
+    border-color: #303030;
+	border-style: dashed;
+	padding: 10px 15px;
+	color: rgb(211, 211, 211);
+}
 
 input {
 	color: black;
+	background-color: rgb(211, 211, 211);
+	margin-bottom: 3vh;
 }
 
 select {
@@ -71,7 +80,9 @@ select {
 }
 
 label {
-	font-size: 1.5em;
+	font-size: 1.2em;
+    color: #777777;
+    margin-bottom: 4vh;
 }
 
 .invalid-feedback {
@@ -104,8 +115,22 @@ ul {
   margin-top: 10vh;
 }
 
+.btn {
+	font-size: 1.25em;
+    background-color: #303030;
+    margin-bottom: 5vh;
+    border-radius: 6vh;
+    color: rgb(204, 209, 209);
+	border-color: darkgrey;
+	border-style: double;
+}
+
 .msg.error.login {
-	background-color: rgba(228, 69, 58, 0.692)
+	margin-bottom: 5vh;
+    border-radius: 6vh;
+    color: rgb(204, 209, 209);
+	border-color: darkgrey;
+	width: 10vh;
 }
 
 page.profile {
@@ -126,11 +151,11 @@ page.profile {
 .field.band.create button {
 	margin-left: 14vh;
 }
-
+/* 
 .btn-sign-login {
 	color:rgba(0,0,0,0.4); 
-}
-.btn-logout {
+} */
+/* .btn-logout {
 	background: none;
 	color: #777;
 	border: none;
@@ -139,10 +164,14 @@ page.profile {
 	padding: 10px 15px;
 	width: 100%;
 	text-align: left;
-}
+} */
 
-.btn-default.btn-lg {
-	background-color: red;
+/* .btn-default.btn-lg {
+	margin-bottom: 5vh;
+    border-radius: 6vh;
+    color: rgb(204, 209, 209);
+	border-color: darkgrey;
+	background-color: #303030;
 }
 .btn-default.btn-apply {
 	background-color: rgba(135, 154, 151);
@@ -151,7 +180,7 @@ page.profile {
 	line-height: 1.3333333;
 	border-radius: 6px;
 	color: white;
-}
+} */
 
 .select.instruments{
 	width: 28vh;
@@ -161,39 +190,16 @@ page.profile {
     margin-bottom: 5vh;
     border-radius: 6vh;
     color: rgb(204, 209, 209);
-    border-color: darkgrey;
+	border-color: darkgrey;
+	border-style: double;
+	padding-left: 2vh;
 }
 
 .field-password {
-	margin-bottom: 6vh;
+	margin-bottom: 3vh;
 }
 
-.navbar-brand {
-	font-size: 2.25em;
-	margin-left: 2.5vh;
-}
 
-nav.navbar-nav {
-	font-size: 1.25em;
-}
-
-.navbar-default .navbar-toggle {
-	color: #777;
-	padding: 6px 10px;
-}
-
-.container > .navbar-header, .container-fluid > .navbar-header, .container > .navbar-collapse, .container-fluid > .navbar-collapse {
-	margin-right: -1px;
-	margin-left: -15px;
-}
-
-.navbar-nav {
-	margin-left: 1vh;
-}
-
-.glyph  {
-	margin-right: 1vh;
-}
 
 /* pages */
 
@@ -206,7 +212,7 @@ nav.navbar-nav {
 	display: flex;
 	flex-direction: column;
 	height: 63vh;
-  margin-top: 10vh;
+	margin-top: 4vh;
 }
 
 .page.band {
@@ -218,6 +224,18 @@ nav.navbar-nav {
 	display: flex;
 	flex-flow: column;
 } */
+
+.page.home h1 {
+	letter-spacing: 0.9vh;
+}
+
+.page.home p {
+	margin-bottom: 5vh;
+}
+
+.page.home select {
+	margin-bottom: 8vh;
+}
 
 .page.band.detail h3 {
 	display: block;
@@ -263,16 +281,14 @@ nav.navbar-nav {
     /* margin-bottom: 1vh; */
 }
 
-.btn.btn-primary {
-	background-color: red;
-}
+/* .btn.btn-primary {
+	font-size: 0.8vh;
+} */
 
 .view.apply.owner {
 	margin-left: 16vh;
-  font-size: 1.25em;
+  	font-size: 1.25em;
 }
-
-
 
 /* .check-box {
 
@@ -287,7 +303,7 @@ nav.navbar-nav {
     background-color: #001F3F;
   }
   100% {
-    background-color: #FF4136;
+    background-color: #777777;
   }
 }
 
@@ -300,11 +316,76 @@ nav.navbar-nav {
     background-color: #001F3F;
   }
   100% {
-    background-color: #FF4136;
+    background-color: #777777;
   }
 }
 
 
+/* bootstrap style */
 
+.btn-lg, .btn-group-lg > .btn {
+    padding: 1.9vh 2.8vh;
+	font-size: 3vh;
+	width: 28vh;
+    line-height: 1.3333333;
+    font-size: 1.25em;
+    background-color: #303030;
+    margin-bottom: 5vh;
+    border-radius: 6vh;
+    color: rgb(204, 209, 209);
+	border-color: rgb(135, 135, 135);
+    border-style: solid;
+}
 
+.navbar-default .navbar-nav > .active > a, .navbar-default .navbar-nav > .active > a:hover, .navbar-default .navbar-nav > .active > a:focus {
+    color: rgb(211, 211, 211);
+    background-color: #303030;
+}
+.navbar-brand {
+	font-size: 2.25em;
+	margin-left: 2.5vh;
+}
+
+nav.navbar-nav {
+	font-size: 1.25em;
+}
+
+.navbar-default .navbar-toggle {
+	color: #777;;
+	padding: 6px 10px;
+}
+
+.container > .navbar-header, .container-fluid > .navbar-header, .container > .navbar-collapse, .container-fluid > .navbar-collapse {
+	margin-right: -1px;
+	margin-left: -15px;
+	background-color: #303030;
+}
+
+.navbar-default .navbar-brand {
+    color: rgb(211, 211, 211);
+    font-size: 3.8vh;
+}
+
+.navbar-default .navbar-nav > li > a {
+    color: rgb(211, 211, 211);
+}
+
+.navbar-nav {
+	margin-left: 1vh;
+}
+
+.glyph  {
+	margin-right: 1vh;
+}
+
+button {
+	padding-top: 10px;
+    padding-bottom: 10px;
+    line-height: 20px;
+    background-color: #303030;
+    border-color: #303030;
+	border-style: dashed;
+	padding: 10px 15px;
+	color: rgb(211, 211, 211);
+}
 
