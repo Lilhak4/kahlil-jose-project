@@ -11,7 +11,7 @@
             <input type="hidden" name="applyInstrument" value="{{this.instrument}}">
             <button class="check" type="submit" class="">accept</button>
         </form>
-        <form method="POST" action="/apply/{{band._id}}/reject">
+        <form method="POST" action="/apply/{{../band._id}}/reject">
             <input type="hidden" name="applyId" value="{{this._id}}">
             <button class="cross" type="submit">reject</button>
         </form>

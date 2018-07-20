@@ -56,7 +56,7 @@ a {
 }
 
 
-/* forms */7
+/* forms */
 
 button {
 	padding-top: 10px;
@@ -93,9 +93,9 @@ ul {
 	list-style-position: disc;
 }
 
-.apply-form {
+/* .apply-form {
 	margin-left: 22vh;
-}
+} */
 
 
 /* layout */
@@ -125,6 +125,18 @@ ul {
 	border-style: double;
 }
 
+.btn-default {
+    line-height: 1.3333333;
+    font-size: 1.25em;
+    background-color: #303030;
+    margin-bottom: 5vh;
+    border-radius: 6vh;
+    color: rgb(204, 209, 209);
+    border-color: rgb(104, 104, 104);
+	border-style: solid;
+	text-align: center;
+}
+
 .msg.error.login {
 	margin-bottom: 5vh;
     border-radius: 6vh;
@@ -139,6 +151,10 @@ page.profile {
 	margin-top: 13vh
 }
 
+.btn-default.btn-apply {
+	margin-top: 5vh;
+}
+
 .logo {
 	width: 50px;
 }
@@ -147,14 +163,16 @@ page.profile {
 	width: 45vh;
 	margin-top: 13vh;
 }
+
 /* components */
 
 .field.band.create {
 	margin-bottom: 3vh;
+	margin-top: 3vh;
 }
 
 .field.band.create button {
-	margin-left: 14vh;
+	margin-left: 8vh;
 }
 /* 
 .btn-sign-login {
@@ -224,6 +242,10 @@ page.profile {
 	display: flex;
 	flex-flow: column;
 }
+
+.page.band.add label {
+	margin-bottom: 0vh;
+}
 /* 
 .page.band.detail {
 	display: flex;
@@ -250,6 +272,7 @@ page.profile {
 
 .page.band.detail p {
 	font-size: 1.3em;
+	margin-bottom: 4vh;
 }
 
 .page.band.detail h4 {
@@ -288,7 +311,14 @@ page.profile {
 	display: flex;
 	flex-flow: wrap;
 	justify-content: space-evenly;
-    /* margin-bottom: 1vh; */
+}
+
+.check-box {
+	margin-bottom: 3vh;
+}
+
+.success.apply {
+	text-align: center;
 }
 
 /* .btn.btn-primary {
@@ -296,9 +326,8 @@ page.profile {
 } */
 
 .view.apply.owner {
-	margin-left: 15vh;
-		font-size: 1.25em;
-		padding: 2vh;
+	font-size: 1.25em;
+	padding: 2vh;
     border: 1px darkgrey solid;
     border-radius: 5vh;
 }
@@ -311,7 +340,7 @@ page.profile {
   animation: pulse 5s infinite;
 }
 
-@keyframes pulse {
+/* @keyframes pulse {
   0% {
     background-color: #001F3F;
   }
@@ -331,7 +360,7 @@ page.profile {
   100% {
     background-color: #777777;
   }
-}
+} */
 
 
 /* bootstrap style */

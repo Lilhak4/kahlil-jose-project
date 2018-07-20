@@ -11,18 +11,19 @@
     <h4>Instruments needed</h4><p>{{#each band.instrument_needed}}{{this}} {{/each}}</p>
     <h4>Members</h4> <p>{{#each band.member}}{{this.username}} {{/each}}</p>
     <h4>Genre</h4> <p>{{band.genre}}</p>
+    {{#if owner}}
+    <div class="field">
+        <a class="view apply owner" href="/apply/{{band.id}}">View Applications</a>
+    </div>  
+    {{/if}}
+    {{#unless owner}}
+    {{#unless alreadyApplied}}
+    <div class="field">
+        <form class="apply-form" method="POST" action="/band/apply/{{band._id}}">
+            <button type="submit" class="btn-default btn-apply" name="join-btn">Join</button>
+        </form>
+    </div>
+    {{/unless}}
+    {{/unless}}
 </div>
-{{#if owner}}
-<div class="field">
-    <a class="view apply owner" href="/apply/{{band._id}}">View Applications</a>
-</div>  
-{{/if}}
-{{#unless owner}}
-{{#unless alreadyApplied}}
-<div class="field">
-    <form class="apply-form" method="POST" action="/band/apply/{{band._id}}">
-        <button type="submit" class="btn-default btn-apply" name="join-btn">Join</button>
-    </form>
-</div>
-{{/unless}}
-{{/unless}}    
+    
