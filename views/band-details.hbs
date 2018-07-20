@@ -7,10 +7,10 @@
       {{/if}}
     </div>
 <div class="page band detail">
-    <h3>Name:</h3> <p>{{band.name}}</p>
-    <h3>Instruments needed:</h3><p>{{#each band.instrument_needed}}{{this}} {{/each}}</p>
-    <h3>Members:</h3> <p>{{#each band.member}}{{this.username}} {{/each}}</p>
-    <h3>Genre:</h3> <p>{{band.genre}}</p>
+    <h4></h4> <h1> {{band.name}}</h1>
+    <h4>Instruments needed</h4><p>{{#each band.instrument_needed}}{{this}} {{/each}}</p>
+    <h4>Members</h4> <p>{{#each band.member}}{{this.username}} {{/each}}</p>
+    <h4>Genre</h4> <p>{{band.genre}}</p>
 </div>
 {{#if owner}}
 <div class="field">

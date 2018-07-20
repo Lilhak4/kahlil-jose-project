@@ -30,12 +30,16 @@
 				<li><a href="/band/add"><i class ="fas fa-plus glyph"></i> Create band </a></li>
 			</ul>
       <ul class="nav navbar-nav navbar-right">
+        
         <li><a href="/auth/signup"><i class="fas fa-user-plus glyph"></i> Sign Up </a></li>
         <li><a href="/auth/login"><i class="fas fa-user glyph"></i> Login </a></li>
+        
+        {{#if req.session.currentUser}}
         <li><form method="post" action="/auth/logout">
               <button class="btn-logout"><i class="fas fa-sign-out-alt glyph"></i> Logout </button>
             </form>
         </li>
+        {{/if}}
       </ul>
     </div><!-- /.navbar-collapse -->
   </div><!-- /.container-fluid -->

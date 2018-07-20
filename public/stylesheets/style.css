@@ -244,7 +244,11 @@ page.profile {
 }
 
 .page.band.detail p {
-	font-size: 1.4em;
+	font-size: 1.3em;
+}
+
+.page.band.detail h4 {
+	color: rgb(204, 209, 209);
 }
 
 .page.band.add {
@@ -267,11 +271,12 @@ page.profile {
 }
 
 .card-body {
-	background-color: rgba(200,200,200,0.6);
-	margin-bottom: 4vh;
-	padding: 20px 20px 30px 20px;
-	width: 56vh;
-	height: 22vh;
+		margin-bottom: 3vh;
+		padding: 20px 20px 30px 20px;
+		width: 56vh;
+		height: 25vh;
+		border-bottom: 0.1vh groove;
+		border-top: 0.1vh groove;
 }
 
 .field.check.box {
