@@ -6,17 +6,18 @@
 				<div class="logo">
 					{{!-- <img src="/images/bandr-logo-mb.png"></img> --}}
 				</div>
-	  		<h2>The best band matching app ever!!!</h2>
+	  		{{!-- <h2>The best band matching app ever!!!</h2> --}}
 	  		<hr>
 				<form method="GET" action="/band/search" >
 				<div>
-					<p>Choose your instrument!</p>					
+					<p>What instrument do you play?</p>					
 					<select name="instrument_needed" class="select instruments">
 						<option>Guitar</option>
 						<option>Singer</option>
 						<option>Drums</option>
 						<option>Bass</option>
 					</select>
+					<p>Search for a band that needs you!</p>
 					<button type="submit" class="btn-default btn-lg"><i class="fas fa-play"></i>Search band</button>
 				</div>
 				</form>					

@@ -1,12 +1,14 @@
 /* layout style */
 
 body {
-	background: url(https://png.pngtree.com/element_our/md/20180327/md_974d58fe28a206b7f340acc8ec8b8793.jpg);
+	/* background: url(../images/background-image.jpg); */
+	background-color: #1a1e21;
 	background-size: cover;
 	background-position: center;
 	/* font-family: 'Amaranth', sans-serif; */
 	font-family: 'Quicksand', sans-serif;
-	color: rgb(239, 242, 244);
+	color: #777777;
+    text-shadow: 0 -1px 0 rgba(0,0,0,0.5);
 }
 
 html {
@@ -16,8 +18,13 @@ html {
 
 /* typography */
 
-h1 {
+h {
 	margin-bottom: 3vh;
+    color: rgb(178, 183, 183);
+}
+
+h1 {
+    letter-spacing: 0.8vh;
 }
 
 h2 {
@@ -31,6 +38,8 @@ h3 {
 
 p {
 	font-size: 1em;
+    color: #777777;
+    margin-bottom: 4vh;
 }
 
 hr {
@@ -146,11 +155,13 @@ page.profile {
 
 .select.instruments{
 	width: 28vh;
-	height: 8vh;
-	font-size: 1.25em;
-	background-color: rgb(255, 255, 255);
-	margin-bottom: 5vh;
-	border-radius: 6px;
+    height: 8vh;
+    font-size: 1.25em;
+    background-color: #303030;
+    margin-bottom: 5vh;
+    border-radius: 6vh;
+    color: rgb(204, 209, 209);
+    border-color: darkgrey;
 }
 
 .field-password {
@@ -198,15 +209,15 @@ nav.navbar-nav {
   margin-top: 10vh;
 }
 
-.page.band.list {
+.page.band {
 	display: flex;
 	flex-flow: column;
 }
-
+/* 
 .page.band.detail {
 	display: flex;
-	flex-flow: column; /*we are gonna change to wrap when we upload the band-image*/
-}
+	flex-flow: column;
+} */
 
 .page.band.detail h3 {
 	display: block;
@@ -292,114 +303,6 @@ nav.navbar-nav {
     background-color: #FF4136;
   }
 }
-
-
-
-
-
-/* rest */
-
-/* #btn-signup-login {
-	width: 125px;
-	height: 25px;
-	border-radius: 12px;
-	color:rgba(0,0,0,0.4); 
-} */
-
-/* .content {
-	height: 75vh;
-	margin: auto 10%;
-	text-align: center;
-	background-color: rgb(0, 0, 0, 0.6);
-	text-shadow: 4px 0px 3px rgba(0,0,0,0.4),
-	0px 8px 13px rgba(0,0,0,0.1),
-	0px 18px 23px rgba(0,0,0,0.1);
-} */
-
-/* for laptop */
-
-/* #content {
-	height: 75vh;
-	margin: auto 5%;
-	text-align: center;
-	padding-top: 25%;
-	margin: 7% 10% 5% 10%;
-	background-color: rgb(0, 0, 0, 0.5);
-	padding: 188px;
-	text-shadow: 4px 0px 3px rgba(0,0,0,0.4),
-	0px 8px 13px rgba(0,0,0,0.1),
-	0px 18px 23px rgba(0,0,0,0.1);
-} */
-
-/* .content-login-signup {
-	display: flex; 
-	flex-flow: column;
-	height: 75vh;
-	margin: auto 10%;
-	text-align: center;
-	background-color: rgb(0, 0, 0, 0.8);
-	text-shadow: 4px 0px 3px rgba(0,0,0,0.4),
-	0px 8px 13px rgba(0,0,0,0.1),
-	0px 18px 23px rgba(0,0,0,0.1);
-} */
-
-/* for laptop */
-
-/* #login-signup-container {
-	display: flex; 
-	flex-flow: column;
-	text-align: center;
-	margin: 5.4% 25.4% 0% 25.4%;
-	background-color: rgb(0, 0, 0, 0.5);
-	padding: 199px;
-} */
-
-
-/* for laptop */
-
-/* #mySelect {
-	width: 10%;
-	height: 5%;
-	font-size: 1.25em;
-	border-radius: 3px;
-	margin-bottom: 16px;
-	background-color: rgb(255, 255, 255);
-} */
-
-/* #band-card-container {
-	display: flex;
-	flex-direction: column;
-	height: 75vh;
-	margin: auto 10%;
-	text-align: center;
-	background-color: rgb(0, 0, 0, 0.8);
-	text-shadow: 4px 0px 3px rgba(0,0,0,0.4),
-	0px 8px 13px rgba(0,0,0,0.1),
-	0px 18px 23px rgba(0,0,0,0.1);
-}
-
-#band-detail-container {
-	display: flex;
-	flex-flow: column;
-	height: 75vh;
-	margin: auto 10%;
-	text-align: center;
-	background-color: rgb(0, 0, 0, 0.8);
-	text-shadow: 4px 0px 3px rgba(0,0,0,0.4),
-	0px 8px 13px rgba(0,0,0,0.1),
-	0px 18px 23px rgba(0,0,0,0.1);
-} */
-
-/* class style */
-
-/* .fas fa-user-plus {
-	margin-right: 5px
-} */
-
-/* .field-submit {
-	margin-top: 8px;
-} */
-
 
 
 
