@@ -5,7 +5,7 @@
   <hr class="profile-hr">
   <h1>Hello, {{currentUser.username}}</h1>
   <h3>Your Instrument:</h3> <p>{{currentUser.instrument}}</p>
-  <h3>Your Band:</h3><p>{{band.name}}</p>
+  <h3>Your Band:</h3><p>{{#each band}}{{this.name}}{{/each}}</p>
   <hr class="profile-hr">
 </div>
 

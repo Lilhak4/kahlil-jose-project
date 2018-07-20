@@ -26,20 +26,23 @@
     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
       <ul class="nav navbar-nav">
       	<li class="active"><a href="/"><i class="fas fa-home glyph"> </i> Home </i></a></li>
+        {{#if currentUser}}
       	<li><a href="/profile"><i class ="fas fa-music glyph"></i> Profile </a></li>
 				<li><a href="/band/add"><i class ="fas fa-plus glyph"></i> Create band </a></li>
+        {{/if}}
 			</ul>
       <ul class="nav navbar-nav navbar-right">
         
+        {{#unless currentUser}}
+        
         <li><a href="/auth/signup"><i class="fas fa-user-plus glyph"></i> Sign Up </a></li>
         <li><a href="/auth/login"><i class="fas fa-user glyph"></i> Login </a></li>
-        
-        {{#if req.session.currentUser}}
+        {{else}}
         <li><form method="post" action="/auth/logout">
               <button class="btn-logout"><i class="fas fa-sign-out-alt glyph"></i> Logout </button>
             </form>
         </li>
-        {{/if}}
+        {{/unless}}
       </ul>
     </div><!-- /.navbar-collapse -->
   </div><!-- /.container-fluid -->
