@@ -43,7 +43,7 @@ p {
     margin-bottom: 3vh;
 }
 
-hr {
+.home-hr {
 	/* width: 400px; */
 	width: 32vh;
 	margin-bottom: 8vh;
@@ -135,13 +135,17 @@ ul {
 
 page.profile {
 	text-align: center;
-	background-color: rgba()
+	background-color: rgba();
+	margin-top: 13vh
 }
 
 .logo {
 	width: 50px;
 }
 
+.profile-hr {
+	width: 45vh;
+}
 /* components */
 
 .field.band.create {
@@ -308,12 +312,12 @@ page.profile {
 }
 
 .btn-default.btn-apply {
-  animation: pulse 5s infinite;
+  animation: pulse 3s infinite;
 }
 
 @keyframes pulse {
   0% {
-    background-color: #001F3F;
+    background-color: rgb(248, 0, 12);
   }
   100% {
     background-color: #777777;
