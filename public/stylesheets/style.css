@@ -139,8 +139,14 @@ page.profile {
 	margin-top: 13vh
 }
 
-.logo {
-	width: 50px;
+.logo 	{
+	display: flex;
+}
+
+.logo img {
+	width: 20vh;
+	height: 14vh;
+  margin-left: 12vh;
 }
 
 .profile-hr {
@@ -232,6 +238,7 @@ page.profile {
 
 .page.home h1 {
 	letter-spacing: 0.9vh;
+	/* float: left; */
 }
 
 .page.home p {
