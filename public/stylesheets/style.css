@@ -295,8 +295,11 @@ page.profile {
 } */
 
 .view.apply.owner {
-	margin-left: 16vh;
-  	font-size: 1.25em;
+	margin-left: 15vh;
+		font-size: 1.25em;
+		padding: 2vh;
+    border: 1px darkgrey solid;
+    border-radius: 5vh;
 }
 
 /* .check-box {
