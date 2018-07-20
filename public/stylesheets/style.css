@@ -35,6 +35,7 @@ h2 {
 
 h3 {
     font-size: 1.5em;
+    color: rgb(211, 211, 211);
 }
 
 p {
@@ -47,7 +48,7 @@ p {
 	/* width: 400px; */
 	width: 32vh;
 	margin-bottom: 8vh;
-	border-top: 1px solid #f8f8f8;
+	border-top: 1px solid rgb(211, 211, 211);
 	border-bottom: 1px solid rgba(0,0,0,0.2)
 }
 
@@ -321,6 +322,12 @@ page.profile {
 	text-align: center;
 }
 
+.applicants.container {
+	display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
 /* .btn.btn-primary {
 	font-size: 0.8vh;
 } */
@@ -331,6 +338,21 @@ page.profile {
     border: 1px darkgrey solid;
     border-radius: 5vh;
 }
+
+.applicants.info {
+	width: 50%;
+}
+
+.applicants.buttons {
+	width: 50%;
+	text-align: right; 
+}
+
+.applicants.separe.line {
+	width: 56vh;
+	border-top: 1px solid rgb(211, 211, 211);
+}
+
 
 /* .check-box {
 

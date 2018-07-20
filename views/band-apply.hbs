@@ -1,21 +1,26 @@
 
-<div class="applicants conatiner">
-    {{#each applicants}}
+
+<div class="applicants container">
+{{#each applicants}}
     <div class="applicants info">
-        <h4>{{this.username}}</h4> 
-        <h4>{{this.instrument}}</h4>
+        <h4>name: {{ this.username}}<br><br>instrument: {{ this.instrument}}</h4> 
+        
     </div>
     <div class="applicants buttons">
         <form method="POST" action="/apply/{{../band._id}}/accept">
             <input type="hidden" name="applyId" value="{{this._id}}">
             <input type="hidden" name="applyInstrument" value="{{this.instrument}}">
-            <button class="check" type="submit" class="">accept</button>
+            <button class="check" type="submit" class=""><img src="" alt="" class="apply accpet"></button>
         </form>
         <form method="POST" action="/apply/{{../band._id}}/reject">
             <input type="hidden" name="applyId" value="{{this._id}}">
-            <button class="cross" type="submit">reject</button>
-        </form>
-    </div>     
+            <button class="cross" type="submit"><img src="../public/images/cross-btn.png" alt="" class="apply reject"></button>
+        </form> 
+        <img src="../public/images/cross-btn.png" alt="">
+    </div>   
+       <hr class="applicants separe line">
 {{/each}}
 </div>
-<a href="/band/{{band._id}}">go back</a> 
+<div>
+    <a href="/band/{{band._id}}">go back</a> 
+</div>
