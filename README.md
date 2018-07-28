@@ -10,12 +10,12 @@
 - **List** As a user I want to see all of the bands that are already created.
 - **Create Search by instrument needed** As a user I want to enter the page and search for the instrument I need.
 - **Band details** AS a user I want to see what the specific details for the band I have selected.
-- **create band with instrument needed** As a user I want to create a band that needs additional people to playt a specific instrument
-- **create band with members** As a user I want to create a band that needs additional members in the band.
-- **apply w/ message** As a user I want to be able to apply to a band with the click of a button on the same page.
-- **view applicant** As a user I want to view an applicant who appliues for my band.
-- **view profile** As a user I want to view my profile along with the profiles of other users.
-- **delete profile** As a user I want to be able to delete my profile. 
+- **Create band with instrument needed** As a user I want to create a band that needs additional people to playt a specific instrument
+- **Create band with members** As a user I want to create a band that needs additional members in the band.
+- **Apply w/ message** As a user I want to be able to apply to a band with the click of a button on the same page.
+- **View applicant** As a user I want to view an applicant who appliues for my band.
+- **View profile** As a user I want to view my profile along with the profiles of other users.
+- **Delete profile** As a user I want to be able to delete my profile. 
 
 **ROUTES** 
 
